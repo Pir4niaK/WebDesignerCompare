@@ -1,0 +1,1 @@
+<WebDesigner><ConfigurationRoot MetamodelVersion="2016-05-08" ID="CPL_ITShop_PersonWantsOrg_GridColumns_Ext"><Extensions><AddObject ObjectID="VirtualTable1" ObjectType="VirtualTable"><VirtualColumn Name="CheckStatus" DataType="System.Boolean" /></AddObject></Extensions></ConfigurationRoot></WebDesigner>
