@@ -1,17 +1,24 @@
-<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="18dd120b-1dbc-1d04-3402-88ef0a261276"><LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_RendererSettings_Mobile" Type="RendererSettings" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><CssDocument CssName="Page Background" ScriptItemUID="CssDocument1">/* overide page background */
+﻿<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="18dd120b-1dbc-1d04-3402-88ef0a261276">
+  <LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_RendererSettings_Mobile" Type="RendererSettings" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <CssDocument CssName="Page Background" ScriptItemUID="CssDocument1">/* overide page background */
 .claro .ui-overlay-a, 
 .claro .ui-page-theme-a, 
 .claro .ui-page-theme-a .ui-panel-wrapper
 {
    background-color: %VI_Common_Color_ColorBase1%;
 }
-</CssDocument><CssDocument CssName="Overriding ContentPart" ScriptItemUID="CssDocument2">.ui-content.ContentPart
+</CssDocument>
+    <CssDocument CssName="Overriding ContentPart" ScriptItemUID="CssDocument2">.ui-content.ContentPart
 {
   left: 0;
   top: 0;
   bottom: 0;
   right: 0;
-}</CssDocument><CssDocument CssName="Header" ScriptItemUID="CssDocument3">.ui-header h1 &gt; span 
+}</CssDocument>
+    <CssDocument CssName="Header" ScriptItemUID="CssDocument3">.ui-header h1 &gt; span 
 {
     margin-left: 20px;
 }
@@ -31,7 +38,8 @@
    	opacity: 1; 
 	filter:alpha(opacity=100);
 	background: %VI_Common_Color_ColorBase2%; 
-}</CssDocument><CssDocument CssName="Footer" ScriptItemUID="CssDocument4">.ui-footer button { 
+}</CssDocument>
+    <CssDocument CssName="Footer" ScriptItemUID="CssDocument4">.ui-footer button { 
    margin: 10px;
 }
 
@@ -41,7 +49,8 @@
    display: none;
 }
 
-</CssDocument><CssDocument CssName="Panel styling" ScriptItemUID="CssDocument5">/* because Listview in VI_UserMenu is not a direct child of the panel */
+</CssDocument>
+    <CssDocument CssName="Panel styling" ScriptItemUID="CssDocument5">/* because Listview in VI_UserMenu is not a direct child of the panel */
 .claro .ui-panel.ui-panel-position-left .ui-listview 
 {
     margin: -15px;
@@ -211,7 +220,8 @@ html head + body .ui-btn.ui-btn-b:visited
   background-color: %VI_Common_Color_DarkerGray%;
 }
 
-</CssDocument><CssDocument CssName="Nav hover submenu items " ScriptItemUID="CssDocument6">
+</CssDocument>
+    <CssDocument CssName="Nav hover submenu items " ScriptItemUID="CssDocument6">
 .claro .ui-panel.ui-panel-position-left .ui-icon-carat-r:after
 {
   background-image: none;
@@ -227,7 +237,8 @@ html head + body .ui-btn.ui-btn-b:visited
 {
    visibility: hidden;
 }
-</CssDocument><CssDocument CssName="Hyperview and SVG Paths - preventing user-select browser defaults" ScriptItemUID="CssDocument8">/* prevents opening of a device-depended popup for saving/copying of the selected image */
+</CssDocument>
+    <CssDocument CssName="Hyperview and SVG Paths - preventing user-select browser defaults" ScriptItemUID="CssDocument8">/* prevents opening of a device-depended popup for saving/copying of the selected image */
 div[data-role='hyperview'],
 path
 {
@@ -244,7 +255,8 @@ path
 }
 
 
-</CssDocument><CssDocument CssName="Hyperview Buttons" ScriptItemUID="CssDocument9">/* don't use a text-shadow in hyperviews */
+</CssDocument>
+    <CssDocument CssName="Hyperview Buttons" ScriptItemUID="CssDocument9">/* don't use a text-shadow in hyperviews */
 .claro .ui-page-theme-a .ui-panel-wrapper [data-role='hyperview']
 {
   text-shadow: none;
@@ -267,7 +279,8 @@ path
 .ui-hv-buttons .btn.qui
 {
    width: 100%;
-}</CssDocument><CssDocument CssName="Performance improvements" Condition="false" ScriptItemUID="CssDocument10">* { 
+}</CssDocument>
+    <CssDocument CssName="Performance improvements" Condition="false" ScriptItemUID="CssDocument10">* { 
    text-shadow: none; 
    box-shadow: none; 
    -webkit-box-shadow: none; 
@@ -278,15 +291,18 @@ path
    -webkit-tap-highlight-color: %VI_Common_Color_ColorBase3%; 
 } 
 
-</CssDocument><CssDocument CssName="Disabled ms touch action (for win rt)" ScriptItemUID="CssDocument11">body,html {  
+</CssDocument>
+    <CssDocument CssName="Disabled ms touch action (for win rt)" ScriptItemUID="CssDocument11">body,html {  
    -ms-touch-action: none; 
-}</CssDocument><CssDocument CssName="Combobox" ScriptItemUID="CssDocument12">/* prevents formatting jqm-combobox with style of default-combobox */
+}</CssDocument>
+    <CssDocument CssName="Combobox" ScriptItemUID="CssDocument12">/* prevents formatting jqm-combobox with style of default-combobox */
 .ui-page .defaultcombobox {
     border: 0 none;
 	border-radius: 0;
     font-weight: 700;
 }
-</CssDocument><CssDocument CssName="Icons" ScriptItemUID="CssDocument13">.ui-icon-imx-user:after {
+</CssDocument>
+    <CssDocument CssName="Icons" ScriptItemUID="CssDocument13">.ui-icon-imx-user:after {
 	background-image: url("%permanentlink%img=User_d.png");
 }
 .ui-icon-imx-properties:after {
@@ -305,7 +321,8 @@ path
 }
 
 
-</CssDocument><CssDocument CssName="Hiding title and pagedescription" ScriptItemUID="CssDocument14">.ui-mobile [data-imx-identifier="Title"],
+</CssDocument>
+    <CssDocument CssName="Hiding title and pagedescription" ScriptItemUID="CssDocument14">.ui-mobile [data-imx-identifier="Title"],
 .ui-mobile [data-imx-identifier="Text"]
 {
    display: none;
@@ -317,18 +334,22 @@ path
 /* reduce padding- there is not so much space*/
     padding-left: 1em;
 }
-}</CssDocument><CssDocument CssName="UserNavigation" ScriptItemUID="CssDocument15">.ui-mobile .usernavigation label,
+}</CssDocument>
+    <CssDocument CssName="UserNavigation" ScriptItemUID="CssDocument15">.ui-mobile .usernavigation label,
 .ui-mobile .usernavigation input
 {
    margin-bottom: 0px;
-}</CssDocument><CssDocument CssName="Disable text-shadow" ScriptItemUID="CssDocument16">.claro .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper
+}</CssDocument>
+    <CssDocument CssName="Disable text-shadow" ScriptItemUID="CssDocument16">.claro .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper
 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper
 {
    text-shadow: none;
-}</CssDocument><CssDocument CssName="imx-documentloading" ScriptItemUID="CssDocument17">.ui-mobile body.imx-documentloading .imx-documentloadingindicator
+}</CssDocument>
+    <CssDocument CssName="imx-documentloading" ScriptItemUID="CssDocument17">.ui-mobile body.imx-documentloading .imx-documentloadingindicator
 {
    z-index: 9999999;
-}</CssDocument><CssDocument CssName="Modification for the higher pixel ration on retina displays" ScriptItemUID="CssDocument19">span.k-icon.k-i-calendar 
+}</CssDocument>
+    <CssDocument CssName="Modification for the higher pixel ration on retina displays" ScriptItemUID="CssDocument19">span.k-icon.k-i-calendar 
 { 
    background-size: 151px 131px;
 }
@@ -340,17 +361,20 @@ path
 
 
 
-</CssDocument><CssDocument CssName="UserNavigation" ScriptItemUID="CssDocument21">div[data-imx-identifier="UserNavigation"].ui-bar
+</CssDocument>
+    <CssDocument CssName="UserNavigation" ScriptItemUID="CssDocument21">div[data-imx-identifier="UserNavigation"].ui-bar
 {
   padding-left: 0px;
   padding-right: 0px;
 }
-</CssDocument><CssDocument CssName="Labels" ScriptItemUID="CssDocument22">.claro.ui-mobile label, 
+</CssDocument>
+    <CssDocument CssName="Labels" ScriptItemUID="CssDocument22">.claro.ui-mobile label, 
 .claro div.ui-controlgroup-label {
   font-weight: inherit;
   font-size: inherit;
   display: inline;
-}</CssDocument><CssDocument ScriptItemUID="CssDocument7" CssName="Mobile switch" SortOrder="1000">.imx-mobile-mobileonly
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument7" CssName="Mobile switch" SortOrder="1000">.imx-mobile-mobileonly
 {
    display: none;
 }
@@ -406,6 +430,9 @@ path
      /*transition: opacity 0.5s linear, visibility 0.5s linear*/
   }
 }
-</CssDocument><CssDocument ScriptItemUID="CssDocument18" CssName="Heatmap">.imx-mobile .modal .hyperviewelement {
+</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument18" CssName="Heatmap">.imx-mobile .modal .hyperviewelement {
    width: inherit !important;
-}</CssDocument></LayoutObject></WebDesigner>
+}</CssDocument>
+  </LayoutObject>
+</WebDesigner>

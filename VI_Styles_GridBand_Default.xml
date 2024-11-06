@@ -1,4 +1,14 @@
-<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="2c6bb4c4-a28e-17ce-d676-e8ec419a853e"><LayoutObject ID="VI_Styles_GridBand_Default" Type="GridBand" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassNameRow" Value="GridRow" Comment="" /><Property Name="CssClassNameHeaderRowAboveColumns" Value="GridRowStaticAbove" Comment="" /><Property Name="CssClassNameHeaderRowBelowColumns" Value="GridRowStaticBelow" Comment="" /><Property Name="CssClassNameCell" Value="GridCell" Comment="" /><Property Name="CssClassNameTable" Value="GridTable" Comment="" /><CssDocument CssName="Grid layout classes" ScriptItemUID="CssDocument1">th.GridCell
+﻿<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="2c6bb4c4-a28e-17ce-d676-e8ec419a853e">
+  <LayoutObject ID="VI_Styles_GridBand_Default" Type="GridBand" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassNameRow" Value="GridRow" Comment="" />
+    <Property Name="CssClassNameHeaderRowAboveColumns" Value="GridRowStaticAbove" Comment="" />
+    <Property Name="CssClassNameHeaderRowBelowColumns" Value="GridRowStaticBelow" Comment="" />
+    <Property Name="CssClassNameCell" Value="GridCell" Comment="" />
+    <Property Name="CssClassNameTable" Value="GridTable" Comment="" />
+    <CssDocument CssName="Grid layout classes" ScriptItemUID="CssDocument1">th.GridCell
 {
   font-weight: 600; 
   border-width: 0 0 1px 0;
@@ -51,7 +61,8 @@ th.GridCell&gt;div
 {
    background-color: transparent;
    color: inherit;
-}</CssDocument><CssDocument CssName="Grid titles above column headers" ScriptItemUID="CssDocument2">.GridRowStaticAbove	
+}</CssDocument>
+    <CssDocument CssName="Grid titles above column headers" ScriptItemUID="CssDocument2">.GridRowStaticAbove	
 { 
   background-color: %VI_Common_Color_LightGray%;
   border: 0;
@@ -80,7 +91,8 @@ th.GridCell&gt;div
 .GridRowStaticBelow  
 { 
   background-color: %VI_Common_Color_LightGray%; 
-}</CssDocument><CssDocument CssName="Grid rows" ScriptItemUID="CssDocument3">.GridRow  
+}</CssDocument>
+    <CssDocument CssName="Grid rows" ScriptItemUID="CssDocument3">.GridRow  
 { 
    background-color: transparent; 
 }
@@ -152,7 +164,8 @@ tfoot .GridFooterCell
 {
   background-color: %VI_Common_Color_LighterGray%;
   font-style: italic;
-}</CssDocument><CssDocument CssName="Paging control" ScriptItemUID="CssDocument4">.imx-grid-pagingcontainer  
+}</CssDocument>
+    <CssDocument CssName="Paging control" ScriptItemUID="CssDocument4">.imx-grid-pagingcontainer  
 { 
   display: flex;
   padding-top: 10px;
@@ -243,11 +256,13 @@ input.imx-grid-paging-index[type="text"],
   .paginglinks select  {
      padding: 0;
   }
-}</CssDocument><CssDocument CssName="Gridsorting and AutoFilterCol" ScriptItemUID="CssDocument5">.gridsortimg  { float: right; }
+}</CssDocument>
+    <CssDocument CssName="Gridsorting and AutoFilterCol" ScriptItemUID="CssDocument5">.gridsortimg  { float: right; }
 
 th .autofiltercol {  margin-left: 5px; display: inline-block; }
 th:hover .autofiltercol { visibility: visible; }
-</CssDocument><CssDocument CssName="Filter Buttons" ScriptItemUID="CssDocument6">.AutoFilterButton{
+</CssDocument>
+    <CssDocument CssName="Filter Buttons" ScriptItemUID="CssDocument6">.AutoFilterButton{
    background-color: transparent; 
    background-image: url('%link%img=filter-small.png');
    padding: 0px;
@@ -258,7 +273,8 @@ th:hover .autofiltercol { visibility: visible; }
 
 .AutoFilterButton.DeleteFilter{
    background-image: url('%permanentlink%stockImg=BlueDelete');
-}</CssDocument><CssDocument CssName="CSSHeaderCell" ScriptItemUID="CssDocument7">th.GridCell.SortedAsc { 
+}</CssDocument>
+    <CssDocument CssName="CSSHeaderCell" ScriptItemUID="CssDocument7">th.GridCell.SortedAsc { 
   background-image: url('%permanentlink%img=sort-up.gif'); 
   background-position: 100% 50%; 
   background-repeat: no-repeat; 
@@ -273,8 +289,11 @@ th.GridCell.SortedDesc
   background-color: %VI_Common_Color_LighterGray%;
 }
 
-</CssDocument><CssDocument CssName="CSS for recursive blocks" ScriptItemUID="CssDocument8">.GridBlock.RecursiveBlock
+</CssDocument>
+    <CssDocument CssName="CSS for recursive blocks" ScriptItemUID="CssDocument8">.GridBlock.RecursiveBlock
 { 
   margin-top: 0;
 }
-</CssDocument></LayoutObject></WebDesigner>
+</CssDocument>
+  </LayoutObject>
+</WebDesigner>

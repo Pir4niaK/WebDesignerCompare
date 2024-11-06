@@ -1,4 +1,9 @@
-<WebDesigner><LayoutObject MetamodelVersion="2012-02-14" ID="VI_Styles_Container_MobilePanel" Type="Container" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><CssDocument CssName="CSS (jQuery Mobile 1.4)">.ui-panel {
+﻿<WebDesigner>
+  <LayoutObject MetamodelVersion="2012-02-14" ID="VI_Styles_Container_MobilePanel" Type="Container" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <CssDocument CssName="CSS (jQuery Mobile 1.4)">.ui-panel {
 	width: %MobilePanelWidth%em;	
 }
 
@@ -61,4 +66,6 @@
 
 .ui-panel-dismiss-open.ui-panel-dismiss-position-right {
 	right: %MobilePanelWidth%em;
-}</CssDocument></LayoutObject></WebDesigner>
+}</CssDocument>
+  </LayoutObject>
+</WebDesigner>

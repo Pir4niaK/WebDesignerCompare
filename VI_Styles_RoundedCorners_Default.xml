@@ -1,4 +1,10 @@
-<WebDesigner><LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_RoundedCorners_Default" Type="RoundedCorners" MigrationNotes="DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassName" Value="hyperviewelement hyperviewelementnew" Comment="" /><CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.hyperviewelementnew { 
+﻿<WebDesigner>
+  <LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_RoundedCorners_Default" Type="RoundedCorners" MigrationNotes="DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassName" Value="hyperviewelement hyperviewelementnew" Comment="" />
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.hyperviewelementnew { 
 padding: 7px;
 background-color: %VI_Common_Color_ColorBase1%;
 color: %VI_Common_Color_Font_Secondary2%;
@@ -39,4 +45,6 @@ text-overflow: ellipsis; overflow: hidden; white-space: nowrap; color: %VI_Commo
 .hyperviewelementnew td, .hyperviewelement th
 {
    color: %VI_Common_Color_Font_Secondary2%;
-}</CssDocument></LayoutObject></WebDesigner>
+}</CssDocument>
+  </LayoutObject>
+</WebDesigner>

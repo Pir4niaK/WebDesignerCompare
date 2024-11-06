@@ -1,4 +1,10 @@
-<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="a8610b8a-8560-6c1e-9dcf-110fcc293a2c"><LayoutObject ID="VI_Styles_Grid_Default" Type="Grid" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassName" Value="Grid" Comment="" /><CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.Grid { 
+﻿<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="a8610b8a-8560-6c1e-9dcf-110fcc293a2c">
+  <LayoutObject ID="VI_Styles_Grid_Default" Type="Grid" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassName" Value="Grid" Comment="" />
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.Grid { 
     border-collapse: collapse; 
     margin-bottom: 4px;
 	/* #26459 fix s repaint/refresh bug in chrome*/
@@ -79,5 +85,8 @@
 .imx-grid-absbottom {
    min-height: 5px;
    /* avoid extra scrollbar when grid with ApplyFilledHeight=true has a hidden paging control */
-}</CssDocument><CssDocument ScriptItemUID="CssDocument2" CssName="HideMenu">.imx-hidemenu .imx-hidemenu-inherit { display: none; }
-</CssDocument></LayoutObject></WebDesigner>
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument2" CssName="HideMenu">.imx-hidemenu .imx-hidemenu-inherit { display: none; }
+</CssDocument>
+  </LayoutObject>
+</WebDesigner>

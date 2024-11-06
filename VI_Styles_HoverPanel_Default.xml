@@ -1,4 +1,9 @@
-<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="4909cc4e-f2af-af7b-4e48-6cba77845fde"><LayoutObject ID="VI_Styles_HoverPanel_Default" Type="HoverPanel" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><CssDocument CssName="css" ScriptItemUID="CssDocument1">.tooltip {
+﻿<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="4909cc4e-f2af-af7b-4e48-6cba77845fde">
+  <LayoutObject ID="VI_Styles_HoverPanel_Default" Type="HoverPanel" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <CssDocument CssName="css" ScriptItemUID="CssDocument1">.tooltip {
   position: absolute;
   z-index: 1070;
   display: block;
@@ -236,4 +241,7 @@ border-bottom-color: %VI_Common_Color_ColorBase1%;
 
 .popover-content {
 word-wrap: break-word;
-}</CssDocument><Property Name="CssClassName" Value="imx-popover" /></LayoutObject></WebDesigner>
+}</CssDocument>
+    <Property Name="CssClassName" Value="imx-popover" />
+  </LayoutObject>
+</WebDesigner>

@@ -1,4 +1,10 @@
-<WebDesigner><LayoutObject ID="VI_Styles_Container_ChartContainer" Type="Container" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassName" Value="Chart" Comment="" /><CssDocument CssName="CSS" ScriptItemUID="CssDocument1">/* Chart classes */
+﻿<WebDesigner>
+  <LayoutObject ID="VI_Styles_Container_ChartContainer" Type="Container" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassName" Value="Chart" Comment="" />
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument1">/* Chart classes */
 
 .Chart { 
   display: inline-block;
@@ -31,4 +37,6 @@
 
 .Chart .ChartTrafficLight { width: %VI_Dashboard_DefaultTrafficLightWidth%px; text-align: center;}
 
-.Chart .ChartTrafficLight .ChartTitle { position: static; border: 0; height: auto; padding-top: 8px; color: %VI_Common_Color_Font_Secondary%;}</CssDocument></LayoutObject></WebDesigner>
+.Chart .ChartTrafficLight .ChartTitle { position: static; border: 0; height: auto; padding-top: 8px; color: %VI_Common_Color_Font_Secondary%;}</CssDocument>
+  </LayoutObject>
+</WebDesigner>

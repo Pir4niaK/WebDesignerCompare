@@ -1,4 +1,9 @@
-<WebDesigner><LayoutObject ID="VI_Styles_Heatmap_Default" Type="Heatmap" MigrationNotes="DIALOGCONFIGPARM;" MetamodelVersion="2016-05-08" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.dojoxTreeMap {
+﻿<WebDesigner>
+  <LayoutObject ID="VI_Styles_Heatmap_Default" Type="Heatmap" MigrationNotes="DIALOGCONFIGPARM;" MetamodelVersion="2016-05-08" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.dojoxTreeMap {
 	background-color: %VI_Common_Color_ColorBase1%;
 	
 }
@@ -87,4 +92,6 @@
     rder-top-right-radius: 15px 15px; 
     border-radius: 15px 15px;
     background:  %VI_Common_Color_ColorBase1%;
-  }</CssDocument></LayoutObject></WebDesigner>
+  }</CssDocument>
+  </LayoutObject>
+</WebDesigner>

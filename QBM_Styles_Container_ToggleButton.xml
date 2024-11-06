@@ -1,4 +1,11 @@
-<WebDesigner><LayoutObject MetamodelVersion="2016-05-08" ScriptItemUID="LayoutObject1" ID="QBM_Styles_Container_ToggleButton" Type="Container"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassName" Value="imx-toggleButton imx-mobile-mobileonly" /><HtmlAttribute ScriptItemUID="HtmlAttribute1" Name="&quot;toggle-button&quot;" Value="&quot; imx-toggleMastHead&quot;" /><CssDocument ScriptItemUID="CssDocument1" CssName="CSS">.imx-toggleButton &gt; a {
+﻿<WebDesigner>
+  <LayoutObject MetamodelVersion="2016-05-08" ScriptItemUID="LayoutObject1" ID="QBM_Styles_Container_ToggleButton" Type="Container">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassName" Value="imx-toggleButton imx-mobile-mobileonly" />
+    <HtmlAttribute ScriptItemUID="HtmlAttribute1" Name="&quot;toggle-button&quot;" Value="&quot; imx-toggleMastHead&quot;" />
+    <CssDocument ScriptItemUID="CssDocument1" CssName="CSS">.imx-toggleButton &gt; a {
     display: inline-block;
     width: %headerheight%px;
     height: %headerheight%px;
@@ -46,4 +53,6 @@
 .imx-highcontrast .imx-toggleButton &gt; a:hover, 
 .imx-highcontrast .imx-toggleButton &gt; a:focus {
     outline: dotted 2px %VI_Common_Color_ColorBase1%;
-}</CssDocument></LayoutObject></WebDesigner>
+}</CssDocument>
+  </LayoutObject>
+</WebDesigner>

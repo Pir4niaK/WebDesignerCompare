@@ -1,4 +1,8 @@
-<WebDesigner><ConfigurationRoot MetamodelVersion="2016-05-08" ID="TSB_History_Ext"><Extensions><AddObject ObjectID="Action4" ObjectType="ActionSequence"><CodeLiteral ScriptItemUID="TSBCodeLiteral1">/* find all group tables */
+﻿<WebDesigner>
+  <ConfigurationRoot MetamodelVersion="2016-05-08" ID="TSB_History_Ext">
+    <Extensions>
+      <AddObject ObjectID="Action4" ObjectType="ActionSequence">
+        <CodeLiteral ScriptItemUID="TSBCodeLiteral1">/* find all group tables */
 
 var queryGroupTables = VI.DB.Entities.Query.From("DialogTable").SelectDisplays().Where("UID_DialogTableUnion = 'TSB-T-" + Type + "HasUNSGroup'");
 var groupTables = _Connection.Session.Source().GetCollection(queryGroupTables);
@@ -6,7 +10,10 @@ foreach (var groupTable in groupTables)
 {
 	dataProvider.AddMemberRelationTable(groupTable.GetValue&lt;string&gt;("TableName"), "UID_" + Type, "AddPermission", "RemovePermission", "ObjectHasPermission");
 }
-</CodeLiteral></AddObject><AddObject ObjectID="Action3" ObjectType="ActionSequence"><CodeLiteral ScriptItemUID="TSBCodeLiteral2">/* find all account tables */
+</CodeLiteral>
+      </AddObject>
+      <AddObject ObjectID="Action3" ObjectType="ActionSequence">
+        <CodeLiteral ScriptItemUID="TSBCodeLiteral2">/* find all account tables */
 
 var queryColumnAccounts = VI.DB.Entities.Query.From("DialogTable").SelectDisplays().Where("UID_DialogTable in ( select uid_DialogTable from DialogColumn where ColumnName = 'UID_Person' and UID_DialogColumnUnionView = 'TSB-AE6E9A043A6642A9A9BFCFB8BB383737')");
 var columnAccounts = _Connection.Session.Source().GetCollection(queryColumnAccounts);
@@ -27,10 +34,23 @@ foreach (var accountKey in accountKeys)
 	AddGroupMembership(childDataProvider, accountKey);
 		
 	providers.Add(accountKey, childDataProvider);
-}</CodeLiteral></AddObject><AddObject ObjectID="Action2" ObjectType="ActionSequence" SortOrder="20"><CodeLiteral ScriptItemUID="TSBCodeLiteral3">// add *AccountIn*Group tables -&gt; this runs even if the base object is not a group
+}</CodeLiteral>
+      </AddObject>
+      <AddObject ObjectID="Action2" ObjectType="ActionSequence" SortOrder="20">
+        <CodeLiteral ScriptItemUID="TSBCodeLiteral3">// add *AccountIn*Group tables -&gt; this runs even if the base object is not a group
 
 AddAccountMembership(dataProvider, new DbObjectKey(_Type, BaseUid));
-</CodeLiteral></AddObject><AddObject ObjectID="ColumnLimitedValues1" ObjectType="ColumnLimitedValues"><ColumnLimitedValue Name="AddAccount" Display="translate(&quot;#LDS#Account created&quot;)" Comment="" /><ColumnLimitedValue Name="RemoveAccount" Display="translate(&quot;#LDS#Account deleted&quot;)" Comment="" /></AddObject><AddObject ObjectID="ColumnLimitedValues3" ObjectType="ColumnLimitedValues"><ColumnLimitedValue Name="Account" Display="translate(&quot;#LDS#Account&quot;)" Comment="" /></AddObject><AddObject ObjectID="CompilationSettings1" ObjectType="CompilationSettings"><TypeMember>internal void AddGroupMembership(QBM.CompositionApi.History.HistoryDataProvider provider, IDbObjectKey accountKey)
+</CodeLiteral>
+      </AddObject>
+      <AddObject ObjectID="ColumnLimitedValues1" ObjectType="ColumnLimitedValues">
+        <ColumnLimitedValue Name="AddAccount" Display="translate(&quot;#LDS#Account created&quot;)" Comment="" />
+        <ColumnLimitedValue Name="RemoveAccount" Display="translate(&quot;#LDS#Account deleted&quot;)" Comment="" />
+      </AddObject>
+      <AddObject ObjectID="ColumnLimitedValues3" ObjectType="ColumnLimitedValues">
+        <ColumnLimitedValue Name="Account" Display="translate(&quot;#LDS#Account&quot;)" Comment="" />
+      </AddObject>
+      <AddObject ObjectID="CompilationSettings1" ObjectType="CompilationSettings">
+        <TypeMember>internal void AddGroupMembership(QBM.CompositionApi.History.HistoryDataProvider provider, IDbObjectKey accountKey)
 {
 	/* find *AccountIn*Group table for this account type */
 	AddMembershipHelper(provider, accountKey, "TSB-T-UNSAccount", "AddPermission", "RemovePermission", "ObjectHasPermission");
@@ -70,4 +90,8 @@ private void AddMembershipHelper(QBM.CompositionApi.History.HistoryDataProvider 
 				
 		provider.AddMemberRelationTable(tableName, columnName, id1, id2, id3);
 	}
-}</TypeMember></AddObject></Extensions></ConfigurationRoot></WebDesigner>
+}</TypeMember>
+      </AddObject>
+    </Extensions>
+  </ConfigurationRoot>
+</WebDesigner>

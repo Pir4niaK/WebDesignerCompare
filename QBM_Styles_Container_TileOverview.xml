@@ -1,4 +1,10 @@
-<WebDesigner><LayoutObject MetamodelVersion="2016-05-08" ScriptItemUID="LayoutObject1" ID="QBM_Styles_Container_TileOverview" Type="Container"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassName" Value="tile-overview" /><CssDocument ScriptItemUID="CssDocument1" CssName="CSS">.tile-overview{
+﻿<WebDesigner>
+  <LayoutObject MetamodelVersion="2016-05-08" ScriptItemUID="LayoutObject1" ID="QBM_Styles_Container_TileOverview" Type="Container">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassName" Value="tile-overview" />
+    <CssDocument ScriptItemUID="CssDocument1" CssName="CSS">.tile-overview{
     display: inline-flex;
 	width: 300px;
 	height: 175px;
@@ -45,4 +51,6 @@
     width: initial;
   }
 }
-</CssDocument></LayoutObject></WebDesigner>
+</CssDocument>
+  </LayoutObject>
+</WebDesigner>

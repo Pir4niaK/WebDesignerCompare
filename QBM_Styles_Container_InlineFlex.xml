@@ -1,4 +1,10 @@
-<WebDesigner><LayoutObject MetamodelVersion="2016-05-08" ScriptItemUID="LayoutObject1" ID="QBM_Styles_Container_InlineFlex" Type="Container"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassName" Value="imx-inlineFlex" Comment="" /><CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.imx-inlineFlex div{ 
+﻿<WebDesigner>
+  <LayoutObject MetamodelVersion="2016-05-08" ScriptItemUID="LayoutObject1" ID="QBM_Styles_Container_InlineFlex" Type="Container">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassName" Value="imx-inlineFlex" Comment="" />
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.imx-inlineFlex div{ 
    display: inline-flex; 
 }
 
@@ -17,4 +23,6 @@
 .imx-inlineFlex div.imx-menudropdown.open
 {
    display: inherit;
-}</CssDocument></LayoutObject></WebDesigner>
+}</CssDocument>
+  </LayoutObject>
+</WebDesigner>

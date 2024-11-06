@@ -1,4 +1,10 @@
-<WebDesigner><LayoutObject MetamodelVersion="2016-05-08" ScriptItemUID="LayoutObject1" ID="QBM_Styles_Container_UserMenu_horizontal" Type="Container"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassName" Value="userMenuHorizontal imx-mobile-nomobile" Comment="" /><CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.userMenuHorizontal  
+﻿<WebDesigner>
+  <LayoutObject MetamodelVersion="2016-05-08" ScriptItemUID="LayoutObject1" ID="QBM_Styles_Container_UserMenu_horizontal" Type="Container">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassName" Value="userMenuHorizontal imx-mobile-nomobile" Comment="" />
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.userMenuHorizontal  
 {
   position: absolute; 
   left: 0; 
@@ -88,4 +94,6 @@
 {
 	border: Highlight dotted 1px;
 	border: -webkit-focus-ring-color auto 1px;
-}</CssDocument></LayoutObject></WebDesigner>
+}</CssDocument>
+  </LayoutObject>
+</WebDesigner>

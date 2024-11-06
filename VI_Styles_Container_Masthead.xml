@@ -1,4 +1,10 @@
-<WebDesigner><LayoutObject ID="VI_Styles_Container_Masthead" Type="Container" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassName" Value="masthead imx-toggleMastHead" Comment="" /><CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.masthead { 	
+﻿<WebDesigner>
+  <LayoutObject ID="VI_Styles_Container_Masthead" Type="Container" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassName" Value="masthead imx-toggleMastHead" Comment="" />
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.masthead { 	
   position: absolute; 
   left: 0; 
   top: 0; 
@@ -103,4 +109,6 @@
   .masthead a.imx-dropdown-toggle {
       max-width:  %headerheight%px !important;
   }  
-}</CssDocument></LayoutObject></WebDesigner>
+}</CssDocument>
+  </LayoutObject>
+</WebDesigner>

@@ -1,4 +1,10 @@
-<WebDesigner><LayoutObject ID="VI_Styles_DateControl_Default" Type="DateControl" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassName" Value="datecontrol" Comment="" /><CssDocument CssName="CSS" ScriptItemUID="CssDocument1">
+﻿<WebDesigner>
+  <LayoutObject ID="VI_Styles_DateControl_Default" Type="DateControl" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassName" Value="datecontrol" Comment="" />
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument1">
 /*
 
 todo: no more qui
@@ -22,4 +28,6 @@ todo: no more qui
 /* for mandatory or read-only date properties, hide the calendar 
 .imx-calendar-mandatory .imx-calendar-checkbox { display: none; }
 .imx-calendar-readonly .imx-calendar-checkbox { display: none; }
-*/</CssDocument></LayoutObject></WebDesigner>
+*/</CssDocument>
+  </LayoutObject>
+</WebDesigner>

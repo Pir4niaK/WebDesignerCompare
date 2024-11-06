@@ -1,4 +1,10 @@
-<WebDesigner><LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_Label_NoDeco" Type="Label" ScriptItemUID="LayoutObject1" IncludeExtensionsFromReplacedDocuments="false"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassName" Value="LabelNoDeco" Comment="" /><CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.LabelNoDeco {
+﻿<WebDesigner>
+  <LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_Label_NoDeco" Type="Label" ScriptItemUID="LayoutObject1" IncludeExtensionsFromReplacedDocuments="false">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassName" Value="LabelNoDeco" Comment="" />
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.LabelNoDeco {
   font-size: 2em;
   float: right;
 }
@@ -6,4 +12,6 @@
 .LabelNoDeco:hover,
 .LabelNoDeco:focus,
 .LabelNoDeco:active
-{text-decoration: none;}</CssDocument></LayoutObject></WebDesigner>
+{text-decoration: none;}</CssDocument>
+  </LayoutObject>
+</WebDesigner>

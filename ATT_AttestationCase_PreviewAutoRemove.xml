@@ -1,4 +1,19 @@
-<WebDesigner><GlobalControl MetamodelVersion="2016-05-08" ID="ATT_AttestationCase_PreviewAutoRemove"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1"><AssemblyReference Assembly="QER.CompositionApi.dll" /><AssemblyReference Assembly="ATT.CompositionApi.dll" /><NamespaceImport Namespace="System.Collections.Generic" /><NamespaceImport Namespace="VI.DB.Scripting" /></CompilationSettings></ContextConfiguration><Context ContainerType="ControlList"><ActionSequence ScriptItemUID="Action1" /><ControlList ScriptItemUID="ControlList1"><Activator ScriptItemUID="Activator1" ExecuteAlways="true"><Action ScriptItemUID="Action2"><CodeLiteral ScriptItemUID="CodeLiteral1">var cases = AttestationCase.Where(r =&gt; AttestationCase_DoReject.GetValue(r).Bool).ToArray();
+﻿<WebDesigner>
+  <GlobalControl MetamodelVersion="2016-05-08" ID="ATT_AttestationCase_PreviewAutoRemove">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1">
+        <AssemblyReference Assembly="QER.CompositionApi.dll" />
+        <AssemblyReference Assembly="ATT.CompositionApi.dll" />
+        <NamespaceImport Namespace="System.Collections.Generic" />
+        <NamespaceImport Namespace="VI.DB.Scripting" />
+      </CompilationSettings>
+    </ContextConfiguration>
+    <Context ContainerType="ControlList">
+      <ActionSequence ScriptItemUID="Action1" />
+      <ControlList ScriptItemUID="ControlList1">
+        <Activator ScriptItemUID="Activator1" ExecuteAlways="true">
+          <Action ScriptItemUID="Action2">
+            <CodeLiteral ScriptItemUID="CodeLiteral1">var cases = AttestationCase.Where(r =&gt; AttestationCase_DoReject.GetValue(r).Bool).ToArray();
 
 if(cases.Any())
 {
@@ -68,4 +83,79 @@ foreach (var acase in cases)
 		v["UID_Person"] = uidPerson;
 		EntitlementsLose.Insert(v);
 	}
-	}</CodeLiteral></Action></Activator><Container ScriptItemUID="Container1" Condition="0 &lt; select count() from EntitlementsLose"><LinkContainer ScriptItemUID="LinkContainer1" EnableCustomAttributes="true"><HtmlAttributes><HtmlAttribute ScriptItemUID="HtmlAttribute2" Name="&quot;class&quot;" Value="&quot;imx-message imx-message-warning&quot;" /></HtmlAttributes><ControlList ScriptItemUID="ControlList8"><Label ScriptItemUID="Label4" Text="translate(&quot;#LDS#You have selected attestation cases to be denied. This may cause some entitlements to be automatically deleted. Click to view more information.&quot;)" /></ControlList><ServerActionCall ScriptItemUID="ServerActionCall1"><CallAction ScriptItemUID="Call2" ActionID="VI_Popup"><VirtualControlMapping ContainerType="Container" VirtualControl="PopupContent"><Container ScriptItemUID="Container13"><Container ScriptItemUID="Container2" Layout="'VI_Styles_Container_ParagraphLargeMarging'"><Label ScriptItemUID="Label7" Text="translate(&quot;#LDS#The following assignments will be removed. Review the list to avoid unintentional loss of access.&quot;)" /></Container><Container ScriptItemUID="Container10"><Grid ScriptItemUID="Grid3" HideMenu="true"><GridBand DataTable="EntitlementsLose" ScriptItemUID="GridBand3" DisplayHeader="Always" EnableCustomAttributes="true"><HtmlAttributes><Property Name="ApplyFilledHeight" Value="true" /></HtmlAttributes><GridBandListView ScriptItemUID="GridBandListView3" EnableListView="Auto" /><GridFilters ScriptItemUID="GridFilters2" /><GridRows /><GridColumnSimple ScriptItemUID="Column6" Column="ObjectDisplay" /><GridColumnSimple ScriptItemUID="Column13" Column="Table" /><GridColumnSimple ScriptItemUID="Column12" Column="Display" /><GridColumnSimple ScriptItemUID="Column3" Column="UID_Person" /></GridBand></Grid></Container></Container></VirtualControlMapping><VirtualControlMapping ContainerType="Container" VirtualControl="PopupBottom"><Container ScriptItemUID="Container17"><ControlReferenceControlList ID="QBM_Common_PopupCloseButton" ScriptItemUID="ControlRef13" /></Container></VirtualControlMapping><VirtualFunctionMapping ScriptItemUID="VirtualFunctionMapping12" ID="PopupTitle()" Value="formTitle()" /><VirtualFunctionMapping ScriptItemUID="VirtualFunctionMapping14" ID="CssClass()" Value="&quot;imx-popup-large&quot;" /></CallAction></ServerActionCall></LinkContainer></Container></ControlList><Tables ScriptItemUID="Tables1"><DataTableObjectView Table="Actions" ScriptItemUID="DataTableObjectView1" ElementType="QER.CompositionApi.Assignment.EntitlementRemoveAction, QER.CompositionApi"><Column DataType="System.String" Name="UID_Person" ScriptItemUID="Column1" /></DataTableObjectView><DataTableCustom Table="EntitlementsLose" ScriptItemUID="DataTableCustom2"><Column DataType="System.String" Name="Key" ScriptItemUID="Column5" /><Column DataType="System.String" Name="Table" ScriptItemUID="Column10" DisplayValueExpression="datacaptionsingle(table+&quot;&quot;)" Caption="translate(&quot;#LDS#Type&quot;)" /><Column DataType="System.String" Name="Display" ScriptItemUID="Column4" Caption="translate(&quot;#LDS#Information&quot;)"><ParameterFree Name="&quot;FilterByValueList&quot;&#13;&#10;-- allow filtering based on actual data values" Value="&quot;true&quot;" ScriptItemUID="ParameterFree14" /></Column><Column DataType="System.String" Name="ObjectDisplay" ScriptItemUID="Column11" Caption="translate(&quot;#LDS#Display&quot;)" /><Column DataType="System.String" Name="UID_Person" ScriptItemUID="Column2" ColumnDataSource="ForeignKey" DBColumnName="&quot;UID_Person&quot;" DBTableName="&quot;Person&quot;" FKWhereClause="" /></DataTableCustom></Tables><Controls ScriptItemUID="Controls1" /><Functions ScriptItemUID="Functions1"><Function ScriptItemUID="Function1" Name="InheritanceInfo()" DataType="System.String" Expression="translate(&quot;#LDS#The entitlement will be removed because of inheritance rules.&quot;)" /></Functions><DataEventHandlers ScriptItemUID="DataEventHandlers1" /></Context><ComponentInterface ScriptItemUID="ComponentInterface1"><VirtualTable Name="AttestationCase" ScriptItemUID="VirtualTable1" Class="AttestationCase"><VirtualColumn Name="DoReject" DataType="System.Boolean" /></VirtualTable><VirtualFunction DataType="System.String" Signature="FormTitle()" TriggerUpdates="Never" /></ComponentInterface></GlobalControl></WebDesigner>
+	}</CodeLiteral>
+          </Action>
+        </Activator>
+        <Container ScriptItemUID="Container1" Condition="0 &lt; select count() from EntitlementsLose">
+          <LinkContainer ScriptItemUID="LinkContainer1" EnableCustomAttributes="true">
+            <HtmlAttributes>
+              <HtmlAttribute ScriptItemUID="HtmlAttribute2" Name="&quot;class&quot;" Value="&quot;imx-message imx-message-warning&quot;" />
+            </HtmlAttributes>
+            <ControlList ScriptItemUID="ControlList8">
+              <Label ScriptItemUID="Label4" Text="translate(&quot;#LDS#You have selected attestation cases to be denied. This may cause some entitlements to be automatically deleted. Click to view more information.&quot;)" />
+            </ControlList>
+            <ServerActionCall ScriptItemUID="ServerActionCall1">
+              <CallAction ScriptItemUID="Call2" ActionID="VI_Popup">
+                <VirtualControlMapping ContainerType="Container" VirtualControl="PopupContent">
+                  <Container ScriptItemUID="Container13">
+                    <Container ScriptItemUID="Container2" Layout="'VI_Styles_Container_ParagraphLargeMarging'">
+                      <Label ScriptItemUID="Label7" Text="translate(&quot;#LDS#The following assignments will be removed. Review the list to avoid unintentional loss of access.&quot;)" />
+                    </Container>
+                    <Container ScriptItemUID="Container10">
+                      <Grid ScriptItemUID="Grid3" HideMenu="true">
+                        <GridBand DataTable="EntitlementsLose" ScriptItemUID="GridBand3" DisplayHeader="Always" EnableCustomAttributes="true">
+                          <HtmlAttributes>
+                            <Property Name="ApplyFilledHeight" Value="true" />
+                          </HtmlAttributes>
+                          <GridBandListView ScriptItemUID="GridBandListView3" EnableListView="Auto" />
+                          <GridFilters ScriptItemUID="GridFilters2" />
+                          <GridRows />
+                          <GridColumnSimple ScriptItemUID="Column6" Column="ObjectDisplay" />
+                          <GridColumnSimple ScriptItemUID="Column13" Column="Table" />
+                          <GridColumnSimple ScriptItemUID="Column12" Column="Display" />
+                          <GridColumnSimple ScriptItemUID="Column3" Column="UID_Person" />
+                        </GridBand>
+                      </Grid>
+                    </Container>
+                  </Container>
+                </VirtualControlMapping>
+                <VirtualControlMapping ContainerType="Container" VirtualControl="PopupBottom">
+                  <Container ScriptItemUID="Container17">
+                    <ControlReferenceControlList ID="QBM_Common_PopupCloseButton" ScriptItemUID="ControlRef13" />
+                  </Container>
+                </VirtualControlMapping>
+                <VirtualFunctionMapping ScriptItemUID="VirtualFunctionMapping12" ID="PopupTitle()" Value="formTitle()" />
+                <VirtualFunctionMapping ScriptItemUID="VirtualFunctionMapping14" ID="CssClass()" Value="&quot;imx-popup-large&quot;" />
+              </CallAction>
+            </ServerActionCall>
+          </LinkContainer>
+        </Container>
+      </ControlList>
+      <Tables ScriptItemUID="Tables1">
+        <DataTableObjectView Table="Actions" ScriptItemUID="DataTableObjectView1" ElementType="QER.CompositionApi.Assignment.EntitlementRemoveAction, QER.CompositionApi">
+          <Column DataType="System.String" Name="UID_Person" ScriptItemUID="Column1" />
+        </DataTableObjectView>
+        <DataTableCustom Table="EntitlementsLose" ScriptItemUID="DataTableCustom2">
+          <Column DataType="System.String" Name="Key" ScriptItemUID="Column5" />
+          <Column DataType="System.String" Name="Table" ScriptItemUID="Column10" DisplayValueExpression="datacaptionsingle(table+&quot;&quot;)" Caption="translate(&quot;#LDS#Type&quot;)" />
+          <Column DataType="System.String" Name="Display" ScriptItemUID="Column4" Caption="translate(&quot;#LDS#Information&quot;)">
+            <ParameterFree Name="&quot;FilterByValueList&quot;&#xD;&#xA;-- allow filtering based on actual data values" Value="&quot;true&quot;" ScriptItemUID="ParameterFree14" />
+          </Column>
+          <Column DataType="System.String" Name="ObjectDisplay" ScriptItemUID="Column11" Caption="translate(&quot;#LDS#Display&quot;)" />
+          <Column DataType="System.String" Name="UID_Person" ScriptItemUID="Column2" ColumnDataSource="ForeignKey" DBColumnName="&quot;UID_Person&quot;" DBTableName="&quot;Person&quot;" FKWhereClause="" />
+        </DataTableCustom>
+      </Tables>
+      <Controls ScriptItemUID="Controls1" />
+      <Functions ScriptItemUID="Functions1">
+        <Function ScriptItemUID="Function1" Name="InheritanceInfo()" DataType="System.String" Expression="translate(&quot;#LDS#The entitlement will be removed because of inheritance rules.&quot;)" />
+      </Functions>
+      <DataEventHandlers ScriptItemUID="DataEventHandlers1" />
+    </Context>
+    <ComponentInterface ScriptItemUID="ComponentInterface1">
+      <VirtualTable Name="AttestationCase" ScriptItemUID="VirtualTable1" Class="AttestationCase">
+        <VirtualColumn Name="DoReject" DataType="System.Boolean" />
+      </VirtualTable>
+      <VirtualFunction DataType="System.String" Signature="FormTitle()" TriggerUpdates="Never" />
+    </ComponentInterface>
+  </GlobalControl>
+</WebDesigner>

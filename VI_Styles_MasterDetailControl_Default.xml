@@ -1,4 +1,9 @@
-<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="a8610b8a-8560-6c1e-9dcf-110fcc293a2c"><LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_MasterDetailControl_Default" Type="MasterDetailControl" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><CssDocument CssName="CSS" ScriptItemUID="CssDocument7">/* vertical layout is the default */
+﻿<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="a8610b8a-8560-6c1e-9dcf-110fcc293a2c">
+  <LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_MasterDetailControl_Default" Type="MasterDetailControl" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument7">/* vertical layout is the default */
 
 .imx-mdc-masterdetail
 {
@@ -187,7 +192,8 @@
     margin: 0;
     font-size: inherit;
 	padding-right: 30px;
-}</CssDocument><CssDocument CssName="Horizontal layout" ScriptItemUID="CssDocument1">/* rules for horizontal layout */
+}</CssDocument>
+    <CssDocument CssName="Horizontal layout" ScriptItemUID="CssDocument1">/* rules for horizontal layout */
 
 @media only screen and (orientation: portrait)
 {
@@ -250,7 +256,8 @@
     -ms-transform: inherit;
 	transform: inherit;
 }
-}</CssDocument><CssDocument ScriptItemUID="CssDocument2" CssName="Smartphone-Mode (imx-mdc-singlePanel)">/* SinglePanelVisible-Mode for smartphones */
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument2" CssName="Smartphone-Mode (imx-mdc-singlePanel)">/* SinglePanelVisible-Mode for smartphones */
 /* when changing this media query, also change the "SinglePanelMediaQuery"-property at each Master-Detail-Control */
 
 
@@ -293,4 +300,6 @@
 .imx-mdc-singlePanel.imx-mdc-detail-opened .imx-mdc-master
 {
 	bottom: 0;  
-}</CssDocument></LayoutObject></WebDesigner>
+}</CssDocument>
+  </LayoutObject>
+</WebDesigner>
