@@ -1,4 +1,12 @@
-<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="a8610b8a-8560-6c1e-9dcf-110fcc293a2c"><LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_RendererSettings_Default" Type="RendererSettings" MigrationNotes="DIALOGCONFIGPARM;" HasRelatedObject="true" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1"><AssemblyReference Assembly="VI.WebRuntime.WebControls.dll" /></CompilationSettings></ContextConfiguration><LayoutRelatedObject Name="VI_Styles_RendererSettings_Mobile" /><CssDocument CssName="Basic styles" SortOrder="-100" ScriptItemUID="CssDocument1">
+﻿<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="a8610b8a-8560-6c1e-9dcf-110fcc293a2c">
+  <LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_RendererSettings_Default" Type="RendererSettings" MigrationNotes="DIALOGCONFIGPARM;" HasRelatedObject="true" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1">
+        <AssemblyReference Assembly="VI.WebRuntime.WebControls.dll" />
+      </CompilationSettings>
+    </ContextConfiguration>
+    <LayoutRelatedObject Name="VI_Styles_RendererSettings_Mobile" />
+    <CssDocument CssName="Basic styles" SortOrder="-100" ScriptItemUID="CssDocument1">
       table
 {
 	border-collapse: collapse; 
@@ -507,7 +515,8 @@ a.imx-hyperviewshape:focus, a.imx-hyperviewshape:hover {
 .imx-relative
 {
    position: relative;
-}</CssDocument><CssDocument ScriptItemUID="CssDocument49" CssName="Normalize">/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument49" CssName="Normalize">/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
 
 /**
@@ -860,7 +869,8 @@ template {
 
 [hidden] {
   display: none;
-}</CssDocument><CssDocument ScriptItemUID="CssDocument48" CssName="QUI">label,
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument48" CssName="QUI">label,
 input,
 button,
 textarea {
@@ -1856,7 +1866,8 @@ textarea.qui-textarea {
 
 .cux-radio[type=radio]:disabled:checked+label:before {
     color: %QBM_Primary_Gray%
-}</CssDocument><CssDocument CssName="FontFamily" SortOrder="-100" ScriptItemUID="CssDocument2">@font-face {
+}</CssDocument>
+    <CssDocument CssName="FontFamily" SortOrder="-100" ScriptItemUID="CssDocument2">@font-face {
     font-family: 'Source Sans Pro';
     src: url('%link%dojoFile=qui/fonts/SourceSansPro-Light.ttf');
     font-weight: 300;
@@ -1926,7 +1937,8 @@ textarea.qui-textarea {
     font-family: 'fa-identity';
     src: url('%link%dojoFile=qui/fonts/fa-identity.ttf');
     font-weight: normal; font-style: normal;
-}</CssDocument><CssDocument ScriptItemUID="CssDocument46" CssName="Icon font">.iconFont {
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument46" CssName="Icon font">.iconFont {
   font-family: Cadence;
   font-style: normal;
   text-align: center;
@@ -4711,8 +4723,10 @@ textarea.qui-textarea {
 	{ 
 	   font-size: 30em !important; 
 	}
-}</CssDocument><CssDocument CssName="FormTemplateStyles" SortOrder="-100" ScriptItemUID="CssDocument3">.contentnomenu  {position: absolute; top: %headerheight%px; left: 0; bottom: 0; right: 0px; padding-right: 20px; overflow: auto; }
-</CssDocument><CssDocument CssName="ContentPart" SortOrder="-100" ScriptItemUID="CssDocument4">.ContentPart, .ContentPartNoMenu, .contentnomenu{
+}</CssDocument>
+    <CssDocument CssName="FormTemplateStyles" SortOrder="-100" ScriptItemUID="CssDocument3">.contentnomenu  {position: absolute; top: %headerheight%px; left: 0; bottom: 0; right: 0px; padding-right: 20px; overflow: auto; }
+</CssDocument>
+    <CssDocument CssName="ContentPart" SortOrder="-100" ScriptItemUID="CssDocument4">.ContentPart, .ContentPartNoMenu, .contentnomenu{
   position: absolute; 
   bottom: 0px; 
   right: 0px; 
@@ -4753,12 +4767,14 @@ textarea.qui-textarea {
       padding: .5em;
 	  margin: 0;
   }
-}</CssDocument><CssDocument CssName="NoHeader" ScriptItemUID="CssDocument5">.imx-noheader .ContentPart, .imx-noheader .ContentPartNoMenu { top: 0px; }
+}</CssDocument>
+    <CssDocument CssName="NoHeader" ScriptItemUID="CssDocument5">.imx-noheader .ContentPart, .imx-noheader .ContentPartNoMenu { top: 0px; }
 .imx-noheader .masthead  { height: 0; display: none;}
 .imx-noheader .NavList { top: %UserNavigationHeight%px; left: 0; }
 .imx-noheader .usernavigation { top: 0; }
 .imx-noheader .portalSelection { top: 0; }
-</CssDocument><CssDocument CssName="NoMenu" ScriptItemUID="CssDocument6">.ContentPart, 
+</CssDocument>
+    <CssDocument CssName="NoMenu" ScriptItemUID="CssDocument6">.ContentPart, 
 .ContentPartNoMenu, 
 .usernavigation, 
 .NavList,
@@ -4794,7 +4810,8 @@ textarea.qui-textarea {
 
 
 
-</CssDocument><CssDocument CssName="ReportStyles" ScriptItemUID="CssDocument7">/* layout definition for reportviewer */
+</CssDocument>
+    <CssDocument CssName="ReportStyles" ScriptItemUID="CssDocument7">/* layout definition for reportviewer */
 .stidatepicker { display:none; }
 
 .ReportViewer table { table-layout:auto; }
@@ -4803,7 +4820,8 @@ textarea.qui-textarea {
 
 /* Report viewer (now) uses table layout for toolbars-&gt; prevent scrollbars */
 .ReportViewer td { overflow: hidden; }
-</CssDocument><CssDocument CssName="AccessKeys" Condition="getconfig(&quot;VI_Common_AccessKeys_Display&quot;)=&quot;true&quot;" ScriptItemUID="CssDocument8">/* display keyboard access keys */
+</CssDocument>
+    <CssDocument CssName="AccessKeys" Condition="getconfig(&quot;VI_Common_AccessKeys_Display&quot;)=&quot;true&quot;" ScriptItemUID="CssDocument8">/* display keyboard access keys */
 
 /* Display [] by the item with the accesskey */
 a[accesskey]:after,
@@ -4816,7 +4834,8 @@ textarea[accesskey]:after
     padding-left: 0.3em;
 	display: inline;
     content: "[Alt " attr(accesskey) "]";
-}</CssDocument><CssDocument CssName="Validation styles" ScriptItemUID="CssDocument9">.imx-validator { color: %QBM_Primary_Red%; display: none; font-style: italic; }
+}</CssDocument>
+    <CssDocument CssName="Validation styles" ScriptItemUID="CssDocument9">.imx-validator { color: %QBM_Primary_Red%; display: none; font-style: italic; }
 
 .imx-validator.imx-validator-invalid { display: block; }
 
@@ -4843,7 +4862,8 @@ fieldset.imx-invalid {
     font-style: italic;
     font-weight: normal;
 	color: %QBM_Primary_Red%;
-}</CssDocument><CssDocument CssName="Message styles" ScriptItemUID="CssDocument10">.imx-message-CreatePassCode  {
+}</CssDocument>
+    <CssDocument CssName="Message styles" ScriptItemUID="CssDocument10">.imx-message-CreatePassCode  {
     border-width: 0;
 	display:inline-block;
     margin: 0 0 1em 0;
@@ -4971,7 +4991,8 @@ padding: 8px 14px !important;
    overflow: hidden;
    text-overflow: ellipsis;
 }
-</CssDocument><CssDocument CssName="QUI compatibility styles" ScriptItemUID="CssDocument11">.k-splitter { background-color: inherit; }
+</CssDocument>
+    <CssDocument CssName="QUI compatibility styles" ScriptItemUID="CssDocument11">.k-splitter { background-color: inherit; }
 .k-header, .k-widget.k-tabstrip { background: %VI_Common_Color_ColorBase1%; }
 .k-tabstrip-items .k-link, .k-tabstrip-items .k-state-active, li.k-item.k-state-default { background: %VI_Common_Color_ColorBase1% !important; color: %VI_Common_Color_Font% !important; text-transform: none; margin: 0; padding: 0;}
 .k-tabstrip-items .k-state-active {border-bottom-color: %VI_Common_Color_Blue_2%; border-width: 0 0 2px 0;  background: %VI_Common_Color_ColorBase1%  !important;}
@@ -5072,7 +5093,8 @@ background-color: %VI_Common_Color_Button_Default_Hover% !important;
 {
    outline: none;
 }
-</CssDocument><CssDocument CssName="Data styles" ScriptItemUID="CssDocument12">.dashboardDataItem
+</CssDocument>
+    <CssDocument CssName="Data styles" ScriptItemUID="CssDocument12">.dashboardDataItem
 {
    width: 200px;
    text-align: center;
@@ -5127,7 +5149,8 @@ a.dashboardDataItemLink, a.dashboardDataItemLink:visited, a.dashboardDataItemLin
    left: 0;
    right: 0;
    bottom: 1em;
-}</CssDocument><CssDocument CssName="Sidebar styles" ScriptItemUID="CssDocument13">.sidebarItem
+}</CssDocument>
+    <CssDocument CssName="Sidebar styles" ScriptItemUID="CssDocument13">.sidebarItem
 {
    margin: 0 0 6px 0;
    background-color: %VI_Common_Color_LighterGray%; 
@@ -5172,7 +5195,8 @@ font-size: 0.9em; display: block; position:absolute; bottom: 0.4em; right:0; max
 
 color: %VI_Common_Color_DarkerGray%;
 }
-</CssDocument><CssDocument CssName="Loading panel styles" SortOrder="-100" ScriptItemUID="CssDocument14">@-webkit-keyframes imx-rotate {
+</CssDocument>
+    <CssDocument CssName="Loading panel styles" SortOrder="-100" ScriptItemUID="CssDocument14">@-webkit-keyframes imx-rotate {
   from {
     -webkit-transform: rotate(0deg);
   }
@@ -5331,7 +5355,8 @@ body.imx-documentloading .imx-documentloadingindicator-inplace
 .cux-spinner.cux-spinner--dark {
     background-image: url(data:image/png;base64,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)
 }
-</CssDocument><CssDocument CssName="Redirection" ScriptItemUID="CssDocument15">.imx-document-redirect .imx-document-redirect-hide
+</CssDocument>
+    <CssDocument CssName="Redirection" ScriptItemUID="CssDocument15">.imx-document-redirect .imx-document-redirect-hide
 {
    display: none;
 }
@@ -5344,7 +5369,8 @@ body.imx-documentloading .imx-documentloadingindicator-inplace
 .imx-document-redirect .imx-document-redirect-display
 {
    display: inherit;
-}</CssDocument><CssDocument CssName="AdditionalColumns popup and infobar styles" ScriptItemUID="CssDocument16">    .additionalColumns-defaultButtons {
+}</CssDocument>
+    <CssDocument CssName="AdditionalColumns popup and infobar styles" ScriptItemUID="CssDocument16">    .additionalColumns-defaultButtons {
         position: absolute;
         right: 28px;
         margin-top: -39px;
@@ -5416,11 +5442,13 @@ body.imx-documentloading .imx-documentloadingindicator-inplace
 	{
 	   max-height: inherit !important;
 	}
-}</CssDocument><CssDocument CssName="LimitedValues" ScriptItemUID="CssDocument17">    .limitedValues-valuesContainer {
+}</CssDocument>
+    <CssDocument CssName="LimitedValues" ScriptItemUID="CssDocument17">    .limitedValues-valuesContainer {
         max-height: 350px;
         overflow-y: auto;
         overflow-x: hidden;
-    }</CssDocument><CssDocument CssName="MultiLanguageEditor" ScriptItemUID="CssDocument18">    .cultureDiv {
+    }</CssDocument>
+    <CssDocument CssName="MultiLanguageEditor" ScriptItemUID="CssDocument18">    .cultureDiv {
         width: 200px;
         float: left;
     }
@@ -5433,7 +5461,8 @@ body.imx-documentloading .imx-documentloadingindicator-inplace
 .ngButtonRow {
     margin: 15px 0px 5px 0px;
     float: right;
-}</CssDocument><CssDocument CssName="AngularStyles" ScriptItemUID="CssDocument19">.ngFadeInOut.ng-enter {
+}</CssDocument>
+    <CssDocument CssName="AngularStyles" ScriptItemUID="CssDocument19">.ngFadeInOut.ng-enter {
   -moz-transition: opacity .3s linear, top .3s ease-out;
   -o-transition: opacity .3s linear, top .3s ease-out;
   -webkit-transition: opacity .3s linear, top .3s ease-out;
@@ -5517,7 +5546,8 @@ input + span.ng-binding
    background-image: url('res.axd?stockimg=BlueDelete&amp;effect=Whiten');
    background-repeat: no-repeat;
    background-position: center center;
-}</CssDocument><CssDocument CssName="Filter styles" ScriptItemUID="CssDocument20">filter-button-command-row &gt; div
+}</CssDocument>
+    <CssDocument CssName="Filter styles" ScriptItemUID="CssDocument20">filter-button-command-row &gt; div
 {
   margin:  15px 0px 5px 0px; 
   float: right
@@ -5532,7 +5562,8 @@ filter-button-command-row div[data-imx-action]
 .imx-dateFilter &gt; *
 {
   float: left;
-}</CssDocument><CssDocument CssName="FavouritesButtons" ScriptItemUID="CssDocument21">  .ngAddButton.ng-enter, .ngAddButton.ng-leave, .ngFavButtonContainer {
+}</CssDocument>
+    <CssDocument CssName="FavouritesButtons" ScriptItemUID="CssDocument21">  .ngAddButton.ng-enter, .ngAddButton.ng-leave, .ngFavButtonContainer {
         -webkit-transition: opacity .3s linear, top .3s ease-out;
         -moz-transition: opacity .3s linear, top .3s ease-out;
         -o-transition: opacity .3s linear, top .3s ease-out;
@@ -5553,7 +5584,8 @@ filter-button-command-row div[data-imx-action]
 
         .ngAddButton.ng-leave-active, .ngFavButtonContainer.ng-leave-active {
             opacity: 0;
-        }</CssDocument><CssDocument CssName="EventBar styles" ScriptItemUID="CssDocument23">ul.imx-eventbar { margin: 0; padding: 0; }
+        }</CssDocument>
+    <CssDocument CssName="EventBar styles" ScriptItemUID="CssDocument23">ul.imx-eventbar { margin: 0; padding: 0; }
 
 li.imx-event {
 list-style-type: none;
@@ -5570,7 +5602,8 @@ li.imx-event.imx-question { background: url('res.axd/qui/qui/img/status/ic_statu
 li.imx-event.imx-info     { background: url('res.axd/qui/qui/img/status/ic_status_info_blu_20.png') no-repeat scroll 0 7px,
                                           url('res.axd?svc=Gradient&amp;Mode=Vertical&amp;Color1=%QBM_Primary_Blue__URL%&amp;Color2=%QBM_Primary_Blue__URL%&amp;Width=2&amp;Height=1000') no-repeat scroll 9px 0 transparent; }
 li.imx-event.imx-pending  { background: url('res.axd/qui/qui/img/status/ic_status_unknown_20.png') no-repeat scroll 0 7px,
-                                          url('res.axd?svc=Gradient&amp;Mode=Vertical&amp;Color1=%VI_Common_Color_LighterGray__URL%&amp;Color2=%VI_Common_Color_LighterGray__URL%&amp;Width=2&amp;Height=1000') no-repeat scroll 9px 0 transparent; }</CssDocument><CssDocument CssName="CurrentConnection Control styles" ScriptItemUID="CssDocument24">/* first columm width */
+                                          url('res.axd?svc=Gradient&amp;Mode=Vertical&amp;Color1=%VI_Common_Color_LighterGray__URL%&amp;Color2=%VI_Common_Color_LighterGray__URL%&amp;Width=2&amp;Height=1000') no-repeat scroll 9px 0 transparent; }</CssDocument>
+    <CssDocument CssName="CurrentConnection Control styles" ScriptItemUID="CssDocument24">/* first columm width */
 .imx-ccTable tr &gt; th
 { 
    min-width: 300px;
@@ -5612,7 +5645,8 @@ div[feature-node] .featureNode-details
 	padding-bottom: 5px;
 	padding-top: 5px;
 }
-</CssDocument><CssDocument CssName="Icons" SortOrder="-100" ScriptItemUID="CssDocument25">.imx-icon
+</CssDocument>
+    <CssDocument CssName="Icons" SortOrder="-100" ScriptItemUID="CssDocument25">.imx-icon
 {
    background-position: 0 center;
    display: inline-block;
@@ -5789,7 +5823,8 @@ div[feature-node] .featureNode-details
 .imx-icon-BlueCheckmark
 {
    background-image: url('%link%stockImg=BlueCheckmark');
-}</CssDocument><CssDocument CssName="Login page styles" ScriptItemUID="CssDocument27">.imx-loginPage { 	
+}</CssDocument>
+    <CssDocument CssName="Login page styles" ScriptItemUID="CssDocument27">.imx-loginPage { 	
    position: absolute; 
    top: 0px; 
    bottom: 50px; 
@@ -5952,7 +5987,8 @@ a.imx-loginLink:hover{
     width: 100%;
 	padding-top: 0px;
   }
-}</CssDocument><CssDocument CssName="Charting" ScriptItemUID="CssDocument28">
+}</CssDocument>
+    <CssDocument CssName="Charting" ScriptItemUID="CssDocument28">
 .IconChartDescriptionLabel {
 color: %QBM_Primary_Blue%;
 overflow:hidden; 
@@ -6097,7 +6133,8 @@ margin: 0 !important;
 div.dijitCheckBox {
 background-image:none !important;
 }
-</CssDocument><CssDocument CssName="Popup styles" ScriptItemUID="CssDocument29">.imx-popup-flex
+</CssDocument>
+    <CssDocument CssName="Popup styles" ScriptItemUID="CssDocument29">.imx-popup-flex
 {
    display: flex;
 }
@@ -6421,7 +6458,8 @@ max-height: 60vh;
    {
       bottom: 60px;
    }
-}</CssDocument><CssDocument CssName="Lync control styles" ScriptItemUID="CssDocument30">.dropdown-menu .arrow
+}</CssDocument>
+    <CssDocument CssName="Lync control styles" ScriptItemUID="CssDocument30">.dropdown-menu .arrow
 {
     border-left-color: %VI_Common_Color_ColorBase1% !important; 
 }
@@ -6494,7 +6532,8 @@ max-height: 60vh;
 {
   top: 15px;
 }
-</CssDocument><CssDocument CssName="Resizable Grid Columns" ScriptItemUID="CssDocument22">.imx-colresize-grip
+</CssDocument>
+    <CssDocument CssName="Resizable Grid Columns" ScriptItemUID="CssDocument22">.imx-colresize-grip
 {
    position: absolute;
    top: 0;
@@ -6524,7 +6563,8 @@ th.GridCell
    border-right: solid 1px %VI_Common_Color_DarkerGray%;
    z-index: 100;
 }
-</CssDocument><CssDocument CssName="Grid View Setting styles" ScriptItemUID="CssDocument31">.gridViewSettingItem &gt; *
+</CssDocument>
+    <CssDocument CssName="Grid View Setting styles" ScriptItemUID="CssDocument31">.gridViewSettingItem &gt; *
 {
   margin-right: 10px;
 }
@@ -6579,11 +6619,13 @@ li[role='menuitem'].imx-grid-showSelection
 .imx-mdc-singlePanel [data-imx-grid-displaytype='MultiSelect'] li[role='menuitem'].imx-grid-showSelection
 {
   display: inherit;
-}</CssDocument><CssDocument CssName="GroupBy control styles" ScriptItemUID="CssDocument32">[group-by-control]
+}</CssDocument>
+    <CssDocument CssName="GroupBy control styles" ScriptItemUID="CssDocument32">[group-by-control]
 {
   float: left;
   margin: 1px 0px 5px 10px;
-}</CssDocument><CssDocument CssName="ExportGrid styles" ScriptItemUID="CssDocument33">grid-exporter
+}</CssDocument>
+    <CssDocument CssName="ExportGrid styles" ScriptItemUID="CssDocument33">grid-exporter
 {
   float: left;
 }
@@ -6610,7 +6652,8 @@ li[role='menuitem'].imx-grid-showSelection
   margin-right: 10px;
 }
 
-</CssDocument><CssDocument CssName="Toolbar styles" ScriptItemUID="CssDocument34">.imx-toolbar
+</CssDocument>
+    <CssDocument CssName="Toolbar styles" ScriptItemUID="CssDocument34">.imx-toolbar
 {
    padding: 6px 0 2px 4px !important;
 }
@@ -6623,7 +6666,8 @@ li[role='menuitem'].imx-grid-showSelection
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
-}</CssDocument><CodeLiteral ScriptItemUID="CodeLiteral1">IDbColumnAdapterFactory columnAdapterFactory = _appInfo.UnityContainer.Resolve&lt;IDbColumnAdapterFactory&gt;();
+}</CssDocument>
+    <CodeLiteral ScriptItemUID="CodeLiteral1">IDbColumnAdapterFactory columnAdapterFactory = _appInfo.UnityContainer.Resolve&lt;IDbColumnAdapterFactory&gt;();
 
 columnAdapterFactory.ColumnAdapterCreated += (s,e) =&gt;
 {
@@ -6641,7 +6685,8 @@ columnAdapterFactory.ColumnAdapterCreated += (s,e) =&gt;
 	{
 		column.ExtendedProperties[DateControl.DateControlTypePropertyKey] = CalendarType.DateTime.ToString();
 	}
-};</CodeLiteral><CssDocument CssName="ToolbarButtonMenu" ScriptItemUID="CssDocument35">.imx-dropdown-toggle:after 
+};</CodeLiteral>
+    <CssDocument CssName="ToolbarButtonMenu" ScriptItemUID="CssDocument35">.imx-dropdown-toggle:after 
 {
     margin-left: 4px; 
 	margin-top: 0; 
@@ -6807,7 +6852,8 @@ li.imx-toolbar-button-breadcrumb
 {
    right:0;
    left: inherit;
-}</CssDocument><CssDocument CssName="Timeline styles" ScriptItemUID="CssDocument36">div.timeline-frame {
+}</CssDocument>
+    <CssDocument CssName="Timeline styles" ScriptItemUID="CssDocument36">div.timeline-frame {
     border: 1px solid %VI_Common_Color_Gray%;
     box-sizing: border-box;
     overflow: hidden;
@@ -7020,7 +7066,8 @@ div.imx-timeline-event-removeaccount
 .imx-timeline-container .qui-inset-pane {
     background-color: %VI_Common_Color_LighterGray%;
 	line-height: 28px;
-}</CssDocument><CssDocument CssName="Global GridBand filter" ScriptItemUID="CssDocument38">.filterbar{
+}</CssDocument>
+    <CssDocument CssName="Global GridBand filter" ScriptItemUID="CssDocument38">.filterbar{
     padding: 5px 20px;
 	background-color: %VI_Common_Color_LighterGray%;
 }
@@ -7048,7 +7095,8 @@ div.imx-timeline-event-removeaccount
     height: 12px;
     margin-top: -2px;
     margin-left: 2px;
-}</CssDocument><CssDocument CssName="Accessibility improvements" ScriptItemUID="CssDocument39">{
+}</CssDocument>
+    <CssDocument CssName="Accessibility improvements" ScriptItemUID="CssDocument39">{
   .imx-nonMobile .NavList, 
   .imx-nonMobile .toolbarButtonPortalSelection, 
   .imx-nonMobile .portalSelection
@@ -7371,7 +7419,8 @@ div.imx-timeline-event-removeaccount
 }
 
 
-</CssDocument><CssDocument CssName="Toggle menu styles" ScriptItemUID="CssDocument40">.imx-button-togglemenu:hover {
+</CssDocument>
+    <CssDocument CssName="Toggle menu styles" ScriptItemUID="CssDocument40">.imx-button-togglemenu:hover {
     background-color: %VI_Common_Color_DarkerGray%;
     background-image: url('%link%img=ic_expndrChevSide2Med_active_select_10.png');
 }
@@ -7400,12 +7449,15 @@ div.imx-timeline-event-removeaccount
 /* hide in mobile view */
 .userinfo_mobile .imx-button-togglemenu {
     display: none;
-}</CssDocument><CssDocument CssName="FilterSelectBox styles" ScriptItemUID="CssDocument41">.imx-filterSelectComboBox
+}</CssDocument>
+    <CssDocument CssName="FilterSelectBox styles" ScriptItemUID="CssDocument41">.imx-filterSelectComboBox
 {
    float: left;
    padding-right: 10px;
    margin-bottom: 20px; 
-}</CssDocument><CssDocument CssName="SQL Wizard styles" ScriptItemUID="CssDocument37">body{}</CssDocument><CssDocument CssName="Flex styles" ScriptItemUID="CssDocumentFlex" SortOrder="-100">/* not a smartphone and not a tablet... */
+}</CssDocument>
+    <CssDocument CssName="SQL Wizard styles" ScriptItemUID="CssDocument37">body{}</CssDocument>
+    <CssDocument CssName="Flex styles" ScriptItemUID="CssDocumentFlex" SortOrder="-100">/* not a smartphone and not a tablet... */
 @media not %IMX_Mediaquery_Smartphone%
 {
 .imx-flex
@@ -7486,7 +7538,8 @@ div.imx-timeline-event-removeaccount
 {
    -ms-flex: 1 1 auto;
 }
-</CssDocument><CssDocument ScriptItemUID="CssDocument26" CssName="Action Styles">.imx-action-restore-large
+</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument26" CssName="Action Styles">.imx-action-restore-large
 {
    background-image: url('%link%dojoFile=qui/Actions/ic_actionRestoreReset_normal_24.png');
 }
@@ -7504,7 +7557,8 @@ div.imx-timeline-event-removeaccount
 .imx-action-compare
 {
    background-image: url('%link%dojoFile=qui/actions/ic_actionCompare_normal_24.png');
-}</CssDocument><CssDocument ScriptItemUID="CssDocument42" CssName="Bucket Control Styles">.imx-bucketctl
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument42" CssName="Bucket Control Styles">.imx-bucketctl
 {
    position: relative;
    padding-top: 3em;
@@ -7650,7 +7704,8 @@ margin-bottom: 10px;
       display: none;
    }
 }
-</CssDocument><CssDocument ScriptItemUID="CssDocument43" CssName="Priority styles">.imx-prio-0
+</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument43" CssName="Priority styles">.imx-prio-0
 {
    	color: %QBM_Primary_Green%;
 }
@@ -7668,7 +7723,8 @@ margin-bottom: 10px;
 .imx-prio-300
 {
    	color: %QBM_Primary_Red%;
-}</CssDocument><CssDocument ScriptItemUID="CssDocument44" CssName="Autocomplete">.imx-auto-complete.imx-proped-viewbox {
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument44" CssName="Autocomplete">.imx-auto-complete.imx-proped-viewbox {
     padding: 2px 4px !important;
 }
 
@@ -7746,7 +7802,8 @@ margin-bottom: 10px;
 
 .imx-auto-complete.multi-select-list .selected .disp, .imx-auto-complete.multi-select-list .selected .ldisp {
     color: %QBM_Primary_White%;
-}</CssDocument><CssDocument ScriptItemUID="CssDocument45" CssName="Wizard control">wizard-control {
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument45" CssName="Wizard control">wizard-control {
     display: flex;
     flex: 1 !important;
     overflow: auto;
@@ -7893,7 +7950,8 @@ margin-bottom: 10px;
     height: 100%;
 }
 }
-</CssDocument><CssDocument ScriptItemUID="CssDocument47" CssName="Grid list view styles">.imx-grid-listview ul
+</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument47" CssName="Grid list view styles">.imx-grid-listview ul
 {
    margin: 0;
    padding: 0;
@@ -7916,7 +7974,8 @@ margin-bottom: 10px;
 
 .imx-grid-listitem-title {
     font-size: larger;
-}</CssDocument><CssDocument ScriptItemUID="CssDocument51" CssName="Phone and Tablet Styles">/* default state */
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument51" CssName="Phone and Tablet Styles">/* default state */
 .state-indicator {
     position: absolute;
     top: -999em;
@@ -7937,7 +7996,8 @@ margin-bottom: 10px;
 /* mobile phone */
 @media %IMX_Mediaquery_Smartphone% {
     .state-indicator:before { content: 'mobile'; }
-}</CssDocument><CssDocument ScriptItemUID="CssDocument53" CssName="MenuDropdown styles">.imx-menudropdown
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument53" CssName="MenuDropdown styles">.imx-menudropdown
 {
   display: none;
   position: absolute;
@@ -7967,7 +8027,8 @@ margin-bottom: 10px;
 
 .imx-menudropdown-toggle i {
     color: %VI_Common_Color_ColorBase1%;
-}</CssDocument><CssDocument ScriptItemUID="CssDocument50" CssName="Badge styles">.imx-badge {
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument50" CssName="Badge styles">.imx-badge {
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;	
@@ -7996,7 +8057,8 @@ margin-bottom: 10px;
 }
 .imx-badge.imx-badge-inverse {
     background-color: %VI_Common_Color_DarkerGray%;
-}</CssDocument><CssDocument CssName="Tile bars" ScriptItemUID="QBMCssDocument1">.imx-tilebar-small
+}</CssDocument>
+    <CssDocument CssName="Tile bars" ScriptItemUID="QBMCssDocument1">.imx-tilebar-small
 {
 	box-sizing: border-box;
 }
@@ -8185,7 +8247,8 @@ a.imx-tile-small:focus, a.imx-tile-small:hover
 	  width: 100%;
       margin-right: 0;
    }
-}</CssDocument><CssDocument CssName="Task pane styles" ScriptItemUID="QBMCssDocument2">.imx-taskpane-container .imx-taskpane { }
+}</CssDocument>
+    <CssDocument CssName="Task pane styles" ScriptItemUID="QBMCssDocument2">.imx-taskpane-container .imx-taskpane { }
 
 .imx-taskpane-container &gt; * {
     flex: 1 1 auto;
@@ -8229,7 +8292,8 @@ a.imx-task:active
 .imx-layoutpane-wrapper, .imx-layoutpane-tile
 {
    display: inline-block;
-}</CssDocument><CssDocument ScriptItemUID="CssDocument54" CssName="Alert styles">.imx-alert { 
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument54" CssName="Alert styles">.imx-alert { 
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -8293,7 +8357,8 @@ a.imx-task:active
     padding-left: 2px;
 }
 
-</CssDocument><CssDocument ScriptItemUID="CssDocument52" CssName="SQL Wizard">.imx-sqlwizard {
+</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument52" CssName="SQL Wizard">.imx-sqlwizard {
   display: flex;
   -ms-flex-direction: column;
   -webkit-flex-direction: column;
@@ -8532,7 +8597,8 @@ a.imx-task:active
 }
 .imx-sqlwizard .k-multiselect-wrap li span {
   margin-right: 0;
-}</CssDocument><CssDocument ScriptItemUID="CssDocument55" CssName="Table column selector">.imx-tcs {
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument55" CssName="Table column selector">.imx-tcs {
   display: flex;
   flex-direction: column;
 }
@@ -8757,7 +8823,8 @@ a.imx-task:active
 .imx-tcs .modal-body &gt; div[ng-hide='isPhoneDevice'] {
     flex-direction: column;
 }
-}</CssDocument><CssDocument ScriptItemUID="CssDocument56" CssName="Multi Language Editor">.mle-ac-template {
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument56" CssName="Multi Language Editor">.mle-ac-template {
   display: flex;
   flex-direction: column;
 }
@@ -8828,7 +8895,8 @@ ml-editor .mle-translation-list li ml-editor-item .mle-translation-deleterequest
   font-weight: bolder;
   align-self: center;
   padding: 0 0 0 10px;
-}</CssDocument><CssDocument ScriptItemUID="CssDocument57" CssName="Numeric Filter">    input::-webkit-outer-spin-button,
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument57" CssName="Numeric Filter">    input::-webkit-outer-spin-button,
     input::-webkit-inner-spin-button 
     {
        -webkit-appearance: none;
@@ -8849,7 +8917,8 @@ ml-editor .mle-translation-list li ml-editor-item .mle-translation-deleterequest
 
     .numeric-filter .qui-numeric-textbox .k-numeric-wrap {
         height: 28px;
-    }</CssDocument><CssDocument ScriptItemUID="CssDocument58" CssName="Password Indicators">.imx-password-weak, .imx-password-medium, .imx-password-good, .imx-password-strong
+    }</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument58" CssName="Password Indicators">.imx-password-weak, .imx-password-medium, .imx-password-good, .imx-password-strong
 {
    background-position: 0 center;
    display: inline-block;
@@ -8871,7 +8940,8 @@ ml-editor .mle-translation-list li ml-editor-item .mle-translation-deleterequest
 {
    background-image: url('%link%stockImg=Warning');
 }
-</CssDocument><CssDocument ScriptItemUID="CssDocument59" CssName="AboutDialog styles">.imx-productLink{
+</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument59" CssName="AboutDialog styles">.imx-productLink{
    outline: none !important; 
    text-decoration: none !important; 
    text-align: center; 
@@ -8885,7 +8955,8 @@ ml-editor .mle-translation-list li ml-editor-item .mle-translation-deleterequest
 .imx-productLink{
    font-size: 9vw; 
 }
-}</CssDocument><CssDocument ScriptItemUID="CssDocument60" CssName="GenericTile">.imx-generic-tile {
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument60" CssName="GenericTile">.imx-generic-tile {
     text-align: center;
 	color: %VI_Common_Color_Font%;
 	vertical-align:top;
@@ -9185,7 +9256,8 @@ section.imx-generic-tile:focus {
     height: unset;
   }  
 
-}</CssDocument><CssDocument ScriptItemUID="CssDocument61" CssName="IE11 notification polyfill">.imx-notifications {
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument61" CssName="IE11 notification polyfill">.imx-notifications {
     position: absolute;
     bottom: 0;
     right: 4em;
@@ -9220,8 +9292,11 @@ section.imx-generic-tile:focus {
    color: %QBM_Primary_Black%;
    background-color: transparent;
    padding: 0;
-}</CssDocument><CssDocument ScriptItemUID="CssDocument62" CssName="Kendo UI legacy styles">/* use styles of Kendo UI v2017.2.504 */
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument62" CssName="Kendo UI legacy styles">/* use styles of Kendo UI v2017.2.504 */
 .k-autocomplete .k-input,.k-dropdown-wrap .k-input,.k-numeric-wrap .k-input,.k-picker-wrap .k-input,.k-selectbox .k-input,.k-textbox&gt;input {
     height: 2.214em;
 	box-sizing: content-box;
-}</CssDocument></LayoutObject></WebDesigner>
+}</CssDocument>
+  </LayoutObject>
+</WebDesigner>

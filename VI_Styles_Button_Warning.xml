@@ -1,4 +1,10 @@
-<WebDesigner><LayoutObject ID="VI_Styles_Button_Warning" Type="Button" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassName" Value="imx-button--warning" Comment="" /><CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.imx-button--warning  {
+﻿<WebDesigner>
+  <LayoutObject ID="VI_Styles_Button_Warning" Type="Button" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassName" Value="imx-button--warning" Comment="" />
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.imx-button--warning  {
     color: %VI_Common_Color_Button_Font_Secondary%;  
     background-color: %VI_Common_Color_Button_Warning%;  
  }
@@ -20,4 +26,6 @@
     color: %VI_Common_Color_Button_Font_Disabled%;
 	background-color: %VI_Common_Color_Button_Disabled%;
 	cursor: not-allowed;
-}</CssDocument></LayoutObject></WebDesigner>
+}</CssDocument>
+  </LayoutObject>
+</WebDesigner>

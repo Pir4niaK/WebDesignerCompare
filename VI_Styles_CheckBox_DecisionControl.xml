@@ -1,4 +1,9 @@
-<WebDesigner><LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_CheckBox_DecisionControl" Type="CheckBox" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.checkbox_yes, .checkbox_no {
+﻿<WebDesigner>
+  <LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_CheckBox_DecisionControl" Type="CheckBox" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.checkbox_yes, .checkbox_no {
     /* Enable absolute positioning of the hidden form controls*/
     position: relative;
     /* Just a bit of space. */
@@ -104,4 +109,6 @@ Set outline style for highlighting focussed control
   outline-style: solid;  
   outline-width: 2px;
   outline-color: %VI_Common_Color_Font%;
-}</CssDocument></LayoutObject></WebDesigner>
+}</CssDocument>
+  </LayoutObject>
+</WebDesigner>

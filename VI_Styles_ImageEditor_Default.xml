@@ -1,4 +1,9 @@
-<WebDesigner><LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_ImageEditor_Default" Type="ImageEditor" MigrationNotes="DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><CssDocument CssName="CSS" ScriptItemUID="CssDocument1">/* jquery.Jcrop.css v0.9.12 - MIT License */
+﻿<WebDesigner>
+  <LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_ImageEditor_Default" Type="ImageEditor" MigrationNotes="DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument1">/* jquery.Jcrop.css v0.9.12 - MIT License */
 /*
   The outer-most container in a typical Jcrop instance
   If you are having difficulty with formatting related to styles
@@ -159,4 +164,6 @@ img.jcrop-preview {
 }
 /* End of Jcrop standard css */
 span[cropvalue] img{max-width:none; }
-</CssDocument></LayoutObject></WebDesigner>
+</CssDocument>
+  </LayoutObject>
+</WebDesigner>

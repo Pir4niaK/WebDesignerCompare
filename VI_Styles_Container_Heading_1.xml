@@ -1,1 +1,8 @@
-<WebDesigner><LayoutObject ID="VI_Styles_Container_Heading_1" Type="Container" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="TagName" Value="h1" Comment="" /></LayoutObject></WebDesigner>
+﻿<WebDesigner>
+  <LayoutObject ID="VI_Styles_Container_Heading_1" Type="Container" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="TagName" Value="h1" Comment="" />
+  </LayoutObject>
+</WebDesigner>

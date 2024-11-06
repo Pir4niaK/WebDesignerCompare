@@ -1,4 +1,10 @@
-<WebDesigner><LayoutObject MetamodelVersion="2016-05-08" ScriptItemUID="LayoutObject1" ID="QBM_Styles_Container_SquareLink" Type="Container"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassName" Value="squareLink" Comment="" /><CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.squareLink{
+﻿<WebDesigner>
+  <LayoutObject MetamodelVersion="2016-05-08" ScriptItemUID="LayoutObject1" ID="QBM_Styles_Container_SquareLink" Type="Container">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassName" Value="squareLink" Comment="" />
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.squareLink{
    display: inline-flex;
    width: 220px;
    height: 7.5em;
@@ -33,4 +39,6 @@
     border: none;
     outline: none;
     text-decoration: none;
-}</CssDocument></LayoutObject></WebDesigner>
+}</CssDocument>
+  </LayoutObject>
+</WebDesigner>

@@ -1,4 +1,8 @@
-<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="2c6bb4c4-a28e-17ce-d676-e8ec419a853e"><ConfigurationRoot MetamodelVersion="2016-05-08" ID="TSB_Common_Search_Ext"><Extensions><AddObject ObjectID="Action2" ObjectType="ActionSequence"><CodeLiteral ScriptItemUID="TSBCodeLiteral1">                var tsbQuery = Query.From("DialogTable").Select("TableName").Where(_Database.SqlFormatter().UidComparison("uid_dialogtableunion", "TSB-T-UNSGroup"));
+﻿<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="2c6bb4c4-a28e-17ce-d676-e8ec419a853e">
+  <ConfigurationRoot MetamodelVersion="2016-05-08" ID="TSB_Common_Search_Ext">
+    <Extensions>
+      <AddObject ObjectID="Action2" ObjectType="ActionSequence">
+        <CodeLiteral ScriptItemUID="TSBCodeLiteral1">                var tsbQuery = Query.From("DialogTable").Select("TableName").Where(_Database.SqlFormatter().UidComparison("uid_dialogtableunion", "TSB-T-UNSGroup"));
 				var tsbTables = await _Database.Source().GetCollectionAsync(tsbQuery, EntityCollectionLoadType.Slim, ct).ConfigureAwait(false);
 				// look up all UNSGroup base tables and search on those
 				foreach(var tsbTable in tsbTables)
@@ -16,4 +20,8 @@
 					}
 					tsbInsertValues[Tables.GetColumn("DbWhereClause")] = whereClause;
 					Tables.Insert(tsbInsertValues);
-				}</CodeLiteral></AddObject></Extensions></ConfigurationRoot></WebDesigner>
+				}</CodeLiteral>
+      </AddObject>
+    </Extensions>
+  </ConfigurationRoot>
+</WebDesigner>

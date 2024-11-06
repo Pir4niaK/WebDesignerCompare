@@ -1,4 +1,10 @@
-<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="a8610b8a-8560-6c1e-9dcf-110fcc293a2c"><LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_ToolbarButton_Heading" Type="ToolbarButton" MigrationNotes="DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassName" Value="toolbarButtonHeading" Comment="" /><CssDocument CssName="CSS" DisableCaching="true" ScriptItemUID="CssDocument1">.toolbarButtonHeading .imx-dropdown
+﻿<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="a8610b8a-8560-6c1e-9dcf-110fcc293a2c">
+  <LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_ToolbarButton_Heading" Type="ToolbarButton" MigrationNotes="DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassName" Value="toolbarButtonHeading" Comment="" />
+    <CssDocument CssName="CSS" DisableCaching="true" ScriptItemUID="CssDocument1">.toolbarButtonHeading .imx-dropdown
 {
 display: inline-block;
 width: %headerheight%px;
@@ -71,4 +77,6 @@ background-color: %VI_Common_Color_Blue_1%;
 { 
 background-color: %VI_Common_Color_Blue_3%;
 }
-</CssDocument></LayoutObject></WebDesigner>
+</CssDocument>
+  </LayoutObject>
+</WebDesigner>

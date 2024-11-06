@@ -1,4 +1,11 @@
-<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="6082b716-1d2b-24a6-7f2a-323eb672202b"><GlobalControl MetamodelVersion="2016-05-08" ID="VI_Attestation_DetailInit_EmployeeCertification" DoNotReuseData="true"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Context ContainerType="ActionComponent"><ActionSequence ScriptItemUID="Action2"><CodeLiteral ScriptItemUID="CodeLiteral1">	var dict = (System.Collections.Generic.Dictionary&lt;IDataRow, IDbObjectRow&gt;)
+﻿<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="6082b716-1d2b-24a6-7f2a-323eb672202b">
+  <GlobalControl MetamodelVersion="2016-05-08" ID="VI_Attestation_DetailInit_EmployeeCertification" DoNotReuseData="true">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Context ContainerType="ActionComponent">
+      <ActionSequence ScriptItemUID="Action2">
+        <CodeLiteral ScriptItemUID="CodeLiteral1">	var dict = (System.Collections.Generic.Dictionary&lt;IDataRow, IDbObjectRow&gt;)
 	_AttestationCase_Current.Row.Table.ExtendedProperties
 	.GetOrAdd("EmployeeCertification", _ =&gt; new System.Collections.Generic.Dictionary&lt;IDataRow, IDbObjectRow&gt;());
 	
@@ -45,4 +52,24 @@
 	
 	actions.Add(act);
 
-	act();</CodeLiteral></ActionSequence><ActionComponent ScriptItemUID="Action1"><ReadOnlyTableModifier DataTable="AttestationCase" ScriptItemUID="ReadOnlyTableModifier1" WhereClause="uid_attestationcase = ( select current uid_attestationcase from attestationcase)" Condition="from vars select isvalid"><ColumnList ScriptItemUID="ColumnList3"><SingleColumn ScriptItemUID="SingleColumn15" DataColumn="DoApprove" /></ColumnList></ReadOnlyTableModifier></ActionComponent><Tables ScriptItemUID="Tables1"><DataTableSingleRow Table="Vars" ScriptItemUID="DataTableSingleRow1"><Column Name="IsValid" DataType="System.Boolean" ScriptItemUID="Column1" TriggerUpdates="Updates" /></DataTableSingleRow></Tables><Controls ScriptItemUID="Controls1" /><Functions ScriptItemUID="Functions1" /><DataEventHandlers ScriptItemUID="DataEventHandlers1" /></Context><ComponentInterface ScriptItemUID="ComponentInterface1" InterfaceName="VI_Interfaces_ObjectSwitch_AttestationCase_DetailInit" /></GlobalControl></WebDesigner>
+	act();</CodeLiteral>
+      </ActionSequence>
+      <ActionComponent ScriptItemUID="Action1">
+        <ReadOnlyTableModifier DataTable="AttestationCase" ScriptItemUID="ReadOnlyTableModifier1" WhereClause="uid_attestationcase = ( select current uid_attestationcase from attestationcase)" Condition="from vars select isvalid">
+          <ColumnList ScriptItemUID="ColumnList3">
+            <SingleColumn ScriptItemUID="SingleColumn15" DataColumn="DoApprove" />
+          </ColumnList>
+        </ReadOnlyTableModifier>
+      </ActionComponent>
+      <Tables ScriptItemUID="Tables1">
+        <DataTableSingleRow Table="Vars" ScriptItemUID="DataTableSingleRow1">
+          <Column Name="IsValid" DataType="System.Boolean" ScriptItemUID="Column1" TriggerUpdates="Updates" />
+        </DataTableSingleRow>
+      </Tables>
+      <Controls ScriptItemUID="Controls1" />
+      <Functions ScriptItemUID="Functions1" />
+      <DataEventHandlers ScriptItemUID="DataEventHandlers1" />
+    </Context>
+    <ComponentInterface ScriptItemUID="ComponentInterface1" InterfaceName="VI_Interfaces_ObjectSwitch_AttestationCase_DetailInit" />
+  </GlobalControl>
+</WebDesigner>

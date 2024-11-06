@@ -1,4 +1,10 @@
-<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="4909cc4e-f2af-af7b-4e48-6cba77845fde"><LayoutObject ID="VI_Styles_Container_Breadcrumb" Type="Container" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassName" Value="usernavigation " Comment="" /><CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.usernavigation  
+﻿<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="4909cc4e-f2af-af7b-4e48-6cba77845fde">
+  <LayoutObject ID="VI_Styles_Container_Breadcrumb" Type="Container" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassName" Value="usernavigation " Comment="" />
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.usernavigation  
 {
   position: absolute; 
   left: %naviwidth%px; 
@@ -12,4 +18,6 @@
   color:  %VI_Common_Color_Font%;
   font-size: 1.1em; 
   padding-left: 25px;
-}</CssDocument></LayoutObject></WebDesigner>
+}</CssDocument>
+  </LayoutObject>
+</WebDesigner>

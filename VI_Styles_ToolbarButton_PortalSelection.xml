@@ -1,4 +1,10 @@
-<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="a8610b8a-8560-6c1e-9dcf-110fcc293a2c"><LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_ToolbarButton_PortalSelection" Type="ToolbarButton" MigrationNotes="DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassName" Value="toolbarButtonPortalSelection" Comment="" /><CssDocument CssName="CSS" DisableCaching="true" ScriptItemUID="CssDocument1">.toolbarButtonPortalSelection span.imx-dropdown
+﻿<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="a8610b8a-8560-6c1e-9dcf-110fcc293a2c">
+  <LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_ToolbarButton_PortalSelection" Type="ToolbarButton" MigrationNotes="DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassName" Value="toolbarButtonPortalSelection" Comment="" />
+    <CssDocument CssName="CSS" DisableCaching="true" ScriptItemUID="CssDocument1">.toolbarButtonPortalSelection span.imx-dropdown
 { 
    display: block;
 }
@@ -55,9 +61,12 @@ border-top-color:%VI_Common_Color_ColorBase2%;
   background: %VI_Common_Color_DarkerGray% none repeat scroll 0 0;
   color: %VI_Common_Color_ColorBase1%;
 }
-</CssDocument><CssDocument CssName="CSS Mobile" ScriptItemUID="CssDocument2">/* style for mobile web */
+</CssDocument>
+    <CssDocument CssName="CSS Mobile" ScriptItemUID="CssDocument2">/* style for mobile web */
 .ui-mobile .portalSelection .dropdown-menu,
 .ui-mobile .portalSelection .dropdown-menu a
 {
    width: %MobileNaviWidth%em;
-}</CssDocument></LayoutObject></WebDesigner>
+}</CssDocument>
+  </LayoutObject>
+</WebDesigner>

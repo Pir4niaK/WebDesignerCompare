@@ -1,1 +1,29 @@
-<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="swXIWKWrMwzTsOlr9CVk+Q=="><GlobalControl MetamodelVersion="2016-05-08" ID="VI_Clone_ShoppingCartItem_Default" MigrationNotes="DMLREPLACE;"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Context ContainerType="ActionComponent"><ActionSequence ScriptItemUID="Action2" /><ActionComponent ScriptItemUID="Action1"><CallAction ActionID="VI_ITShop_AddCartItem" ScriptItemUID="CallAction1"><VirtualFunctionMapping ID="uidaccproduct()" Value="uidaccproduct()" ScriptItemUID="VirtualFunctionMapping1" /><VirtualFunctionMapping ID="uidpersonordered()" Value="uidpersonordered()" ScriptItemUID="VirtualFunctionMapping2" /><VirtualFunctionMapping ID="UID_ShoppingCartItemParentForOptional()" Value="UID_ShoppingCartItemParentForOptional()" ScriptItemUID="VirtualFunctionMapping3" /><VirtualFunctionMapping ID="UID_ShoppingCartOrder()" Value="UID_ShoppingCartOrder()" ScriptItemUID="VirtualFunctionMapping4" /><VirtualFunctionMapping ID="OrderDetail1()" Value="OrderDetail1()" ScriptItemUID="VirtualFunctionMapping5" /><VirtualFunctionMapping ID="OrderDetail2()" Value="OrderDetail2()" ScriptItemUID="VirtualFunctionMapping6" /><VirtualTableMapping VirtualTable="ShoppingCartItem" DataTable="ShoppingCartItem" ScriptItemUID="VirtualTableMapping1" /></CallAction><CallAction ActionID="OnAfterInsert" ScriptItemUID="CallAction2" /></ActionComponent><Tables ScriptItemUID="Tables1" /><Controls ScriptItemUID="Controls1" /><Functions ScriptItemUID="Functions1" /><DataEventHandlers ScriptItemUID="DataEventHandlers1" /></Context><ComponentInterface InterfaceName="VI_Interfaces_ObjectSwitch_Clone_ShoppingCartItem" ScriptItemUID="ComponentInterface1"><VirtualTableExtension Name="ShoppingCartItem" Class="ShoppingCartItem" ScriptItemUID="VirtualTableExtension1" /></ComponentInterface></GlobalControl></WebDesigner>
+﻿<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="swXIWKWrMwzTsOlr9CVk+Q==">
+  <GlobalControl MetamodelVersion="2016-05-08" ID="VI_Clone_ShoppingCartItem_Default" MigrationNotes="DMLREPLACE;">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Context ContainerType="ActionComponent">
+      <ActionSequence ScriptItemUID="Action2" />
+      <ActionComponent ScriptItemUID="Action1">
+        <CallAction ActionID="VI_ITShop_AddCartItem" ScriptItemUID="CallAction1">
+          <VirtualFunctionMapping ID="uidaccproduct()" Value="uidaccproduct()" ScriptItemUID="VirtualFunctionMapping1" />
+          <VirtualFunctionMapping ID="uidpersonordered()" Value="uidpersonordered()" ScriptItemUID="VirtualFunctionMapping2" />
+          <VirtualFunctionMapping ID="UID_ShoppingCartItemParentForOptional()" Value="UID_ShoppingCartItemParentForOptional()" ScriptItemUID="VirtualFunctionMapping3" />
+          <VirtualFunctionMapping ID="UID_ShoppingCartOrder()" Value="UID_ShoppingCartOrder()" ScriptItemUID="VirtualFunctionMapping4" />
+          <VirtualFunctionMapping ID="OrderDetail1()" Value="OrderDetail1()" ScriptItemUID="VirtualFunctionMapping5" />
+          <VirtualFunctionMapping ID="OrderDetail2()" Value="OrderDetail2()" ScriptItemUID="VirtualFunctionMapping6" />
+          <VirtualTableMapping VirtualTable="ShoppingCartItem" DataTable="ShoppingCartItem" ScriptItemUID="VirtualTableMapping1" />
+        </CallAction>
+        <CallAction ActionID="OnAfterInsert" ScriptItemUID="CallAction2" />
+      </ActionComponent>
+      <Tables ScriptItemUID="Tables1" />
+      <Controls ScriptItemUID="Controls1" />
+      <Functions ScriptItemUID="Functions1" />
+      <DataEventHandlers ScriptItemUID="DataEventHandlers1" />
+    </Context>
+    <ComponentInterface InterfaceName="VI_Interfaces_ObjectSwitch_Clone_ShoppingCartItem" ScriptItemUID="ComponentInterface1">
+      <VirtualTableExtension Name="ShoppingCartItem" Class="ShoppingCartItem" ScriptItemUID="VirtualTableExtension1" />
+    </ComponentInterface>
+  </GlobalControl>
+</WebDesigner>

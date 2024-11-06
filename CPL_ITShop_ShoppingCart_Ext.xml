@@ -1,4 +1,12 @@
-<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="6082b716-1d2b-24a6-7f2a-323eb672202b"><ConfigurationRoot MetamodelVersion="2016-05-08" ID="CPL_ITShop_ShoppingCart_Ext"><Extensions><AddObject ObjectID="ColumnLimitedValues1" ObjectType="ColumnLimitedValues"><ColumnLimitedValue Name="Rule" Display="translate(&quot;#LDS#Compliance violation&quot;)" Comment="" /><ColumnLimitedValue Name="RuleNoException" Display="translate(&quot;#LDS#Non-approvable compliance violation&quot;)" Comment="" /></AddObject><AddObject ObjectID="Action57" ObjectType="ActionSequence" SortOrder="11"><CodeLiteral ScriptItemUID="CPLCodeLiteral1">foreach (var cplItem in checkResult.Results.OfType&lt;CPL.CompositionApi.ITShop.CartItemComplianceCheckResult&gt;())
+﻿<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="6082b716-1d2b-24a6-7f2a-323eb672202b">
+  <ConfigurationRoot MetamodelVersion="2016-05-08" ID="CPL_ITShop_ShoppingCart_Ext">
+    <Extensions>
+      <AddObject ObjectID="ColumnLimitedValues1" ObjectType="ColumnLimitedValues">
+        <ColumnLimitedValue Name="Rule" Display="translate(&quot;#LDS#Compliance violation&quot;)" Comment="" />
+        <ColumnLimitedValue Name="RuleNoException" Display="translate(&quot;#LDS#Non-approvable compliance violation&quot;)" Comment="" />
+      </AddObject>
+      <AddObject ObjectID="Action57" ObjectType="ActionSequence" SortOrder="11">
+        <CodeLiteral ScriptItemUID="CPLCodeLiteral1">foreach (var cplItem in checkResult.Results.OfType&lt;CPL.CompositionApi.ITShop.CartItemComplianceCheckResult&gt;())
 {
 	var _loadTableHelper = new VI.WebRuntime.ObjectKeyBulkLoader(((VI.WebRuntime.IDbObjectStore)(ComplianceCheckSimpleObjects)));
 	_loadTableHelper.ResolveObjectMode = VI.WebRuntime.ResolveMNObjectMode.ResolveIfExists;
@@ -34,4 +42,14 @@
 	
 	_loadTableHelper.LoadAsync().Wait();
 
-}</CodeLiteral></AddObject><AddObject ObjectID="CompilationSettings1" ObjectType="CompilationSettings"><AssemblyReference Assembly="CPL.Customizer.dll" /><NamespaceImport Namespace="CPL.Customizer" /><NamespaceImport Namespace="CPL.CompositionApi.ITShop" /><AssemblyReference Assembly="CPL.CompositionApi.dll" /></AddObject></Extensions></ConfigurationRoot></WebDesigner>
+}</CodeLiteral>
+      </AddObject>
+      <AddObject ObjectID="CompilationSettings1" ObjectType="CompilationSettings">
+        <AssemblyReference Assembly="CPL.Customizer.dll" />
+        <NamespaceImport Namespace="CPL.Customizer" />
+        <NamespaceImport Namespace="CPL.CompositionApi.ITShop" />
+        <AssemblyReference Assembly="CPL.CompositionApi.dll" />
+      </AddObject>
+    </Extensions>
+  </ConfigurationRoot>
+</WebDesigner>

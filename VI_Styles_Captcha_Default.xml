@@ -1,1 +1,11 @@
-<WebDesigner><LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_Captcha_Default" Type="Captcha" MigrationNotes="DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassName" Value="captcha" Comment="" /><CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.captcha table { table-layout: auto; }</CssDocument><Property Name="RecaptchaPublicKey" Value="" Comment="" /><Property Name="RecaptchaPrivateKey" Value="" Comment="" /></LayoutObject></WebDesigner>
+﻿<WebDesigner>
+  <LayoutObject MetamodelVersion="2016-05-08" ID="VI_Styles_Captcha_Default" Type="Captcha" MigrationNotes="DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassName" Value="captcha" Comment="" />
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.captcha table { table-layout: auto; }</CssDocument>
+    <Property Name="RecaptchaPublicKey" Value="" Comment="" />
+    <Property Name="RecaptchaPrivateKey" Value="" Comment="" />
+  </LayoutObject>
+</WebDesigner>

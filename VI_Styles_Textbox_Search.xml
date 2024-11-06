@@ -1,4 +1,11 @@
-<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="a8610b8a-8560-6c1e-9dcf-110fcc293a2c"><LayoutObject ID="VI_Styles_Textbox_Search" Type="TextBox" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;DIALOGCONFIGPARM;" HasRelatedObject="true" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><LayoutRelatedObject Name="VI_Styles_Textbox_Default" /><Property Name="CssClass" Value="TextBoxSearch" Comment="" /><CssDocument CssName="CSS" ScriptItemUID="CssDocument1">input[type="text"].TextBoxSearch {
+﻿<WebDesigner xmlns:ns0="http://www.vi-net.de/aeds" ns0:tdnsHash="a8610b8a-8560-6c1e-9dcf-110fcc293a2c">
+  <LayoutObject ID="VI_Styles_Textbox_Search" Type="TextBox" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;DIALOGCONFIGPARM;" HasRelatedObject="true" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <LayoutRelatedObject Name="VI_Styles_Textbox_Default" />
+    <Property Name="CssClass" Value="TextBoxSearch" Comment="" />
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument1">input[type="text"].TextBoxSearch {
   color: %VI_Common_Color_ColorBase1%;
   border-width: 0 0 1px 0;
   border-color: %VI_Common_Color_ColorBase1%;
@@ -48,7 +55,8 @@ font-weight: lighter;
   color: %VI_Common_Color_ColorBase1%;
   font-weight: 400; 
   opacity: 1;
-}</CssDocument><CssDocument ScriptItemUID="CssDocument2" CssName="CSS for SearchBox in MenuDropdown">.imx-menudropdown .imx-search {
+}</CssDocument>
+    <CssDocument ScriptItemUID="CssDocument2" CssName="CSS for SearchBox in MenuDropdown">.imx-menudropdown .imx-search {
   flex: 1 1 auto;
   min-width: 214px;
 }
@@ -86,4 +94,6 @@ font-weight: lighter;
 .imx-toggleContainer .imx-menudropdown .imx-search {
     border: solid 1px %VI_Common_Color_LighterGray%;
 }
-</CssDocument></LayoutObject></WebDesigner>
+</CssDocument>
+  </LayoutObject>
+</WebDesigner>

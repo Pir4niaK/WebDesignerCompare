@@ -1,4 +1,10 @@
-<WebDesigner><LayoutObject ID="VI_Styles_Container_ButtonPanel" Type="Container" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Property Name="CssClassName" Value="modal-footer" Comment="" /><CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.modal-footer {
+﻿<WebDesigner>
+  <LayoutObject ID="VI_Styles_Container_ButtonPanel" Type="Container" MetamodelVersion="2016-05-08" MigrationNotes="DMLREPLACE;DIALOGCONFIGPARM;" ScriptItemUID="LayoutObject1">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Property Name="CssClassName" Value="modal-footer" Comment="" />
+    <CssDocument CssName="CSS" ScriptItemUID="CssDocument1">.modal-footer {
  clear: both; 
  width: auto; 
  text-align: right; 
@@ -18,4 +24,6 @@ right: 0;
 {
 .modal-footer&gt;* { 
 margin-left: inherit; }
-}</CssDocument></LayoutObject></WebDesigner>
+}</CssDocument>
+  </LayoutObject>
+</WebDesigner>

@@ -1,1 +1,18 @@
-<WebDesigner><GlobalControl MetamodelVersion="2016-05-08" ID="VI_Edit_View_Date"><ContextConfiguration><CompilationSettings ScriptItemUID="CompilationSettings1" /></ContextConfiguration><Context ContainerType="ControlList"><ActionSequence ScriptItemUID="Action2" /><ControlList ScriptItemUID="Container1"><Label Text="from edittable select current displayvalue(editcolumn)" ScriptItemUID="Label1" /></ControlList><Tables ScriptItemUID="Tables1" /><Controls ScriptItemUID="Controls1" /><Functions ScriptItemUID="Functions1" /><DataEventHandlers ScriptItemUID="DataEventHandlers1" /></Context><ComponentInterface InterfaceName="VI_Interfaces_ColumnEditor_View" ScriptItemUID="ComponentInterface1" /></GlobalControl></WebDesigner>
+﻿<WebDesigner>
+  <GlobalControl MetamodelVersion="2016-05-08" ID="VI_Edit_View_Date">
+    <ContextConfiguration>
+      <CompilationSettings ScriptItemUID="CompilationSettings1" />
+    </ContextConfiguration>
+    <Context ContainerType="ControlList">
+      <ActionSequence ScriptItemUID="Action2" />
+      <ControlList ScriptItemUID="Container1">
+        <Label Text="from edittable select current displayvalue(editcolumn)" ScriptItemUID="Label1" />
+      </ControlList>
+      <Tables ScriptItemUID="Tables1" />
+      <Controls ScriptItemUID="Controls1" />
+      <Functions ScriptItemUID="Functions1" />
+      <DataEventHandlers ScriptItemUID="DataEventHandlers1" />
+    </Context>
+    <ComponentInterface InterfaceName="VI_Interfaces_ColumnEditor_View" ScriptItemUID="ComponentInterface1" />
+  </GlobalControl>
+</WebDesigner>
